@@ -1,0 +1,11 @@
+{
+  "name": "barcelona-calendar",
+  "version": "1.0.0",
+  "description": "Calendario automático del FC Barcelona",
+  "scripts": {
+    "build": "echo 'No build step needed for Python functions'"
+  },
+  "keywords": ["barcelona", "calendar", "ics"],
+  "author": "Tu Nombre",
+  "license": "MIT"
+}
