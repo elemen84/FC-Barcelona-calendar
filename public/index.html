@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendari FC Barcelona</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 500px;
+            margin: 100px auto;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #a8d8ff 0%, #ffb6c1 100%);
+            color: #2c3e50;
+            text-align: center;
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 50px 40px;
+            border-radius: 25px;
+            box-shadow: 0 20px 40px rgba(0, 77, 152, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        h1 {
+            color: #5d8aa8;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+            font-weight: 300;
+        }
+        .button {
+            display: inline-block;
+            background: linear-gradient(135deg, #87ceeb 0%, #ff91a4 100%);
+            color: white;
+            padding: 20px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.3em;
+            margin: 25px 0;
+            box-shadow: 0 10px 25px rgba(135, 206, 235, 0.4);
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(135, 206, 235, 0.6);
+        }
+        .info {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(173, 216, 230, 0.2);
+            border-radius: 15px;
+            font-size: 0.95em;
+            line-height: 1.5;
+
+            /* Mantener 4 líneas y alinearlas al inicio */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .info p {
+            margin: 0;
+        }
+
+
+                }
+                .emoji {
+                    font-size: 1.2em;
+                    margin-right: 8px;
+                }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚽ Calendari FC Barcelona</h1>
+        <p style="font-size: 1.1em; margin-bottom: 30px; color: #5d8aa8;">
+            Subscripció automàtica - S'actualitza cada 6 hores
+        </p>
+
+        <a href="webcal://barcelona-calendar.netlify.app/" class="button">
+            🔗 Afegir al Calendari
+        </a>
+
+        <div class="info">
+            <p><span class="emoji">✅</span> Una sola vegada</p>
+            <p><span class="emoji">🔄</span> S'actualitza automàticament</p>
+            <p><span class="emoji">📅</span> Tots els partits oficials</p>
+            <p><span class="emoji">⏰</span> Hora catalana</p>
+        </div>
+
+        <p style="margin-top: 25px; font-size: 0.9em; color: #7f8c8d;">
+            Funciona amb Google Calendar, Apple Calendar, Outlook, etc.
+        </p>
+    </div>
+</body>
+</html>
