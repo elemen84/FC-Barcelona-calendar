@@ -140,12 +140,12 @@ def create_ics_calendar(matches):
             # Colores según localía
             if is_home_match:
                 color = "#004D98"  # Azul Barça
-                location = "Spotify Camp Nou / Estadi Olímpic"
-                emoji = "🏟️"
+                location = "Spotify Camp Nou"
+                emoji = "🏠"
             else:
                 color = "#A50044"  # Granate visitante
                 location = "Fuera de casa"
-                emoji = "⚔️"
+                emoji = "✈️"
 
             resultado = match.get('resultado', '')
             competicion = match['competition']
