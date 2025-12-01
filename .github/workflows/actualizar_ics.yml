@@ -1,0 +1,54 @@
+name: 📅 Actualizar Calendario FC Barcelona ICS
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * *'
+
+env:
+  GIT_COMMIT_AUTHOR: Calendari Bot
+  GIT_COMMIT_EMAIL: action@github.com
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del Repositorio
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configurar Entorno Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Instalar Dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 icalendar pytz
+
+      - name: 🚀 Ejecutar Script de Generación ICS
+        run: python barcelona-calendar.py
+
+      - name: Configurar Git para Commit
+        run: |
+          git config user.name "${{ env.GIT_COMMIT_AUTHOR }}"
+          git config user.email "${{ env.GIT_COMMIT_EMAIL }}"
+
+      - name: Comprobar Cambios en barcelona.ics
+        id: check_changes
+        run: |
+          if git diff --exit-code barcelona.ics; then
+            echo "files_changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "files_changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: 💾 Commit y Push del Archivo ICS Actualizado
+        if: steps.check_changes.outputs.files_changed == 'true'
+        run: |
+          git add barcelona.ics
+          git commit -m "🤖 Actualización automática del calendario ICS (Fecha: $(date +%Y-%m-%d))"
+          git push

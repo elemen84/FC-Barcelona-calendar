@@ -6,6 +6,6 @@
     "build": "echo 'No build step needed for Python functions'"
   },
   "keywords": ["barcelona", "calendar", "ics"],
-  "author": "Tu Nombre",
+  "author": "EAC",
   "license": "MIT"
 }
