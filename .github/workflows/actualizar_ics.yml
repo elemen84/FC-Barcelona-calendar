@@ -1,54 +1,53 @@
-name: 📅 Actualizar Calendario FC Barcelona ICS
+name: 📅 Actualizar Calendario FC Barcelona
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 6 * * *'
-
-env:
-  GIT_COMMIT_AUTHOR: Calendari Bot
-  GIT_COMMIT_EMAIL: action@github.com
+    - cron: '0 6 * * *'  # 6 AM UTC = 7/8 AM hora española
+  push:
+    branches: [ main ]
 
 jobs:
-  build-and-deploy:
+  update-calendar:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout del Repositorio
+      - name: ⬇️ Checkout del repositorio
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Configurar Entorno Python
+      - name: 🐍 Configurar Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: '3.11'
 
-      - name: Instalar Dependencias
+      - name: 📦 Instalar dependencias
         run: |
-          python -m pip install --upgrade pip
           pip install requests beautifulsoup4 icalendar pytz
 
-      - name: 🚀 Ejecutar Script de Generación ICS
+      - name: 🚀 Ejecutar script de generación
         run: python barcelona-calendar.py
 
-      - name: Configurar Git para Commit
+      - name: ⚙️ Configurar Git
         run: |
-          git config user.name "${{ env.GIT_COMMIT_AUTHOR }}"
-          git config user.email "${{ env.GIT_COMMIT_EMAIL }}"
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
 
-      - name: Comprobar Cambios en barcelona.ics
+      - name: 🔄 Verificar cambios
         id: check_changes
         run: |
-          if git diff --exit-code barcelona.ics; then
-            echo "files_changed=false" >> $GITHUB_OUTPUT
+          if git diff --quiet barcelona.ics; then
+            echo "changes=false" >> $GITHUB_OUTPUT
+            echo "✅ No hay cambios en el calendario"
           else
-            echo "files_changed=true" >> $GITHUB_OUTPUT
+            echo "changes=true" >> $GITHUB_OUTPUT
+            echo "🔄 Se detectaron cambios en el calendario"
           fi
 
-      - name: 💾 Commit y Push del Archivo ICS Actualizado
-        if: steps.check_changes.outputs.files_changed == 'true'
+      - name: 💾 Subir cambios si es necesario
+        if: steps.check_changes.outputs.changes == 'true'
         run: |
           git add barcelona.ics
-          git commit -m "🤖 Actualización automática del calendario ICS (Fecha: $(date +%Y-%m-%d))"
+          git commit -m "🤖 Actualización automática del calendario ($(date +'%Y-%m-%d %H:%M'))"
           git push

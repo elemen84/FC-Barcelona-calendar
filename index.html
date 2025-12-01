@@ -58,47 +58,103 @@
             border-radius: 15px;
             font-size: 0.95em;
             line-height: 1.5;
-
-            /* Mantener 4 líneas y alinearlas al inicio */
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             gap: 8px;
         }
-
         .info p {
             margin: 0;
         }
-
-
-                }
-                .emoji {
-                    font-size: 1.2em;
-                    margin-right: 8px;
-                }
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 8px;
+        }
+        .button-secondary {
+            background: linear-gradient(135deg, #5d8aa8 0%, #a50044 100%);
+            margin-top: 10px;
+            font-size: 1.1em;
+            padding: 15px 30px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>⚽ Calendari FC Barcelona</h1>
         <p style="font-size: 1.1em; margin-bottom: 30px; color: #5d8aa8;">
-            Subscripció automàtica - S'actualitza cada 6 hores
+            Subscripció automàtica - S'actualitza cada dia a les 6 AM UTC
         </p>
 
-        <a href="webcal://barcelona-calendar.netlify.app/" class="button">
-            🔗 Afegir al Calendari
+        <!-- SUSCRIPCIÓN AUTOMÁTICA (webcal) -->
+        <a href="webcal://elemen84.github.io/FC-Barcelona-calendar/barcelona.ics" class="button">
+            📅 Suscripció Automàtica (webcal)
+        </a>
+
+        <!-- ENLACE DIRECTO -->
+        <a href="https://elemen84.github.io/FC-Barcelona-calendar/barcelona.ics" class="button button-secondary">
+            🔗 Enllaç Directe al .ics
         </a>
 
         <div class="info">
-            <p><span class="emoji">✅</span> Una sola vegada</p>
-            <p><span class="emoji">🔄</span> S'actualitza automàticament</p>
-            <p><span class="emoji">📅</span> Tots els partits oficials</p>
-            <p><span class="emoji">⏰</span> Hora catalana</p>
+            <p><span class="emoji">✅</span> Una sola vegada (suscripció)</p>
+            <p><span class="emoji">🔄</span> S'actualitza automàticament cada dia</p>
+            <p><span class="emoji">📅</span> Tots els partits oficials (Lliga i Champions)</p>
+            <p><span class="emoji">⏰</span> Hora catalana (CET/CEST)</p>
+            <p><span class="emoji">🎯</span> Resultats actualitzats després dels partits</p>
         </div>
 
-        <p style="margin-top: 25px; font-size: 0.9em; color: #7f8c8d;">
-            Funciona amb Google Calendar, Apple Calendar, Outlook, etc.
+        <div style="margin-top: 30px; padding: 15px; background: #f8f9fa; border-radius: 10px;">
+            <h3 style="margin-top: 0; color: #5d8aa8;">📋 Com funciona?</h3>
+            <p style="text-align: left; font-size: 0.9em;">
+                1. Fes clic a "Suscripció Automàtica" per afegir-ho al teu calendari<br>
+                2. El calendari es mantindrà actualitzat automàticament<br>
+                3. Els canvis apareixen en menys de 24 hores<br>
+                4. Funciona amb Google, Apple, Outlook i la majoria de calendaris
+            </p>
+        </div>
+
+        <p style="margin-top: 25px; font-size: 0.85em; color: #7f8c8d;">
+            ⚡ Actualització diària automàtica via GitHub Actions<br>
+            📊 Última actualització: <span id="last-update">carregant...</span>
         </p>
     </div>
+
+    <script>
+        // Mostrar última actualización
+        fetch('barcelona.ics')
+            .then(response => {
+                const lastModified = response.headers.get('last-modified');
+                if (lastModified) {
+                    const date = new Date(lastModified);
+                    const options = {
+                        year: 'numeric',
+                        month: 'long',
+                        day: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit',
+                        timeZone: 'Europe/Madrid'
+                    };
+                    document.getElementById('last-update').textContent =
+                        date.toLocaleDateString('ca-ES', options);
+                }
+            })
+            .catch(() => {
+                document.getElementById('last-update').textContent = 'No disponible';
+            });
+
+        // Detectar dispositivo y mostrar instrucciones específicas
+        const isApple = /iPad|iPhone|iPod|Mac/.test(navigator.userAgent) && !window.MSStream;
+        const isAndroid = /Android/.test(navigator.userAgent);
+
+        if (isApple) {
+            document.querySelector('.info').innerHTML += `
+                <p><span class="emoji">🍎</span> Per a iPhone/Mac: Fes clic a "Suscripció Automàtica"</p>
+            `;
+        } else if (isAndroid) {
+            document.querySelector('.info').innerHTML += `
+                <p><span class="emoji">🤖</span> Per a Android: Usa Google Calendar amb l'enllaç directe</p>
+            `;
+        }
+    </script>
 </body>
 </html>
