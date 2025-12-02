@@ -15,7 +15,7 @@ jobs:
       - name: ⬇️ Checkout del repositorio
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.FCB_TOKEN }}  # 👈 CANVIA AIXÒ DE GITHUB_TOKEN A FCB_TOKEN
 
       - name: 🐍 Configurar Python
         uses: actions/setup-python@v5
@@ -27,7 +27,7 @@ jobs:
           pip install requests beautifulsoup4 icalendar pytz
 
       - name: 🚀 Ejecutar script de generación
-        run: python barcelona-calendar.py
+        run: python barcelona-calendar.py  # 👈 Assegura't que aquest és el nom correcte del teu script
 
       - name: ⚙️ Configurar Git
         run: |
