@@ -4,18 +4,19 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 6 * * *'  # 6 AM UTC = 7/8 AM hora española
-  push:
-    branches: [ main ]
 
 jobs:
   update-calendar:
     runs-on: ubuntu-latest
 
+    # 👇 AQUESTA PART ÉS CLAU
+    permissions:
+      contents: write  # PERMET ESCRITURA
+
     steps:
       - name: ⬇️ Checkout del repositorio
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.FCB_TOKEN }}  # 👈 CANVIA AIXÒ DE GITHUB_TOKEN A FCB_TOKEN
+        # 👇 NO posis cap token aquí - usa el per defecte
 
       - name: 🐍 Configurar Python
         uses: actions/setup-python@v5
@@ -27,12 +28,12 @@ jobs:
           pip install requests beautifulsoup4 icalendar pytz
 
       - name: 🚀 Ejecutar script de generación
-        run: python barcelona-calendar.py  # 👈 Assegura't que aquest és el nom correcte del teu script
+        run: python generate_calendar.py  # O el nom del teu script
 
       - name: ⚙️ Configurar Git
         run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "actions@github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: 🔄 Verificar cambios
         id: check_changes
