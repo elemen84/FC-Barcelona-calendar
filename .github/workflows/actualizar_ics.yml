@@ -1,54 +1,162 @@
-name: 📅 Actualizar Calendario FC Barcelona
+name: 🐛 DEBUG Calendario FC Barcelona
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 6 * * *'  # 6 AM UTC = 7/8 AM hora española
 
 jobs:
-  update-calendar:
+  debug-permisos:
     runs-on: ubuntu-latest
 
-    # 👇 AQUESTA PART ÉS CLAU
+    # Prova amb i sense permisos
     permissions:
-      contents: write  # PERMET ESCRITURA
+      contents: write
 
     steps:
-      - name: ⬇️ Checkout del repositorio
+      # PAS 1: Mostrar informació del entorn
+      - name: 🔍 Información del entorno
+        run: |
+          echo "=== INFORMACIÓN DEL ENTORNO ==="
+          echo "Fecha: $(date)"
+          echo "Repositorio: $GITHUB_REPOSITORY"
+          echo "Actor: $GITHUB_ACTOR"
+          echo "Workflow: $GITHUB_WORKFLOW"
+          echo "Token disponible: ${{ secrets.GITHUB_TOKEN != '' }}"
+          echo "FCB_TOKEN disponible: ${{ secrets.FCB_TOKEN != '' }}"
+          echo ""
+          echo "=== VARIABLES GITHUB ==="
+          env | grep -i github | sort
+
+      # PAS 2: Checkout amb debug
+      - name: ⬇️ Checkout con debug
+        id: checkout
         uses: actions/checkout@v4
-        # 👇 NO posis cap token aquí - usa el per defecte
-
-      - name: 🐍 Configurar Python
-        uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          fetch-depth: 0  # Traer todo el historial
 
-      - name: 📦 Instalar dependencias
+      # PAS 3: Verificar estado del repositorio
+      - name: 📊 Estado del repositorio
         run: |
-          pip install requests beautifulsoup4 icalendar pytz
+          echo "=== ESTADO DEL REPOSITORIO ==="
+          git status
+          echo ""
+          echo "=== RAMA ACTUAL ==="
+          git branch -a
+          echo ""
+          echo "=== REMOTES ==="
+          git remote -v
+          echo ""
+          echo "=== ÚLTIMOS COMMITS ==="
+          git log --oneline -5
+          echo ""
+          echo "=== ARCHIVOS .ics ==="
+          ls -la *.ics 2>/dev/null || echo "No hay archivos .ics"
 
-      - name: 🚀 Ejecutar script de generación
-        run: python generate_calendar.py  # O el nom del teu script
-
-      - name: ⚙️ Configurar Git
+      # PAS 4: Probar permisos de escritura
+      - name: ✏️ Probar escritura básica
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          echo "=== PRUEBA DE ESCRITURA ==="
+          
+          # Crear archivo de prueba
+          echo "# Archivo de prueba - $(date)" > test-permisos.txt
+          echo "Este archivo prueba los permisos de escritura" >> test-permisos.txt
+          
+          # Configurar git
+          git config user.email "debug@test.com"
+          git config user.name "Debug Bot"
+          
+          echo "✅ Archivo creado"
+          ls -la test-permisos.txt
 
-      - name: 🔄 Verificar cambios
-        id: check_changes
+      # PAS 5: Probar add y commit
+      - name: 💾 Probar add/commit
         run: |
-          if git diff --quiet barcelona.ics; then
-            echo "changes=false" >> $GITHUB_OUTPUT
-            echo "✅ No hay cambios en el calendario"
+          echo "=== PRUEBA ADD/COMMIT ==="
+          
+          # Intentar agregar
+          git add test-permisos.txt
+          echo "✅ Add exitoso"
+          
+          # Intentar commit
+          if git commit -m "🧪 Test permisos $(date '+%H:%M:%S')" 2>&1; then
+            echo "✅ Commit exitoso"
           else
-            echo "changes=true" >> $GITHUB_OUTPUT
-            echo "🔄 Se detectaron cambios en el calendario"
+            echo "❌ Falló el commit"
+            echo "Error output:"
+            git commit -m "🧪 Test permisos $(date '+%H:%M:%S')" 2>&1 || true
           fi
 
-      - name: 💾 Subir cambios si es necesario
-        if: steps.check_changes.outputs.changes == 'true'
+      # PAS 6: Probar push con diferentes métodos
+      - name: 📤 Probar PUSH (método 1)
+        id: push1
         run: |
-          git add barcelona.ics
-          git commit -m "🤖 Actualización automática del calendario ($(date +'%Y-%m-%d %H:%M'))"
-          git push
+          echo "=== MÉTODO 1: Push normal ==="
+          set +e  # No salir en error
+          
+          if git push origin HEAD 2>&1; then
+            echo "✅ Push exitoso (método 1)"
+            echo "result=success" >> $GITHUB_OUTPUT
+          else
+            echo "❌ Push falló (método 1)"
+            echo "result=failed" >> $GITHUB_OUTPUT
+          fi
+          set -e
+
+      - name: 📤 Probar PUSH (método 2)
+        if: steps.push1.outputs.result == 'failed'
+        run: |
+          echo "=== MÉTODO 2: Push con URL específica ==="
+          echo "Intentando con URL directa..."
+          
+          # Obtener URL del repositorio
+          REPO_URL="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git"
+          
+          git push $REPO_URL HEAD:master 2>&1 || echo "❌ Método 2 también falló"
+
+      # PAS 7: Verificar archivo .ics si existe
+      - name: 📅 Verificar calendario existente
+        run: |
+          echo "=== VERIFICANDO CALENDARIO ==="
+          
+          if [ -f "barcelona.ics" ]; then
+            echo "✅ barcelona.ics existe"
+            echo "Tamaño: $(wc -l < barcelona.ics) líneas"
+            echo "Última modificación: $(stat -c %y barcelona.ics)"
+            
+            # Ver contenido básico
+            echo ""
+            echo "=== PRIMERAS 10 LÍNEAS ==="
+            head -10 barcelona.ics
+          else
+            echo "ℹ️ No existe barcelona.ics en este momento"
+          fi
+
+      # PAS 8: Intentar generar calendario
+      - name: 🐍 Intentar generar calendario
+        run: |
+          echo "=== INTENTANDO GENERAR CALENDARIO ==="
+          
+          # Verificar si existe el script
+          if [ -f "generate_calendar.py" ]; then
+            echo "✅ Script encontrado: generate_calendar.py"
+            
+            # Instalar dependencias si es necesario
+            python -c "import requests" 2>/dev/null || pip install requests --quiet
+            
+            # Ejecutar script
+            python generate_calendar.py
+            
+            # Verificar resultado
+            if [ -f "barcelona.ics" ]; then
+              echo "✅ Calendario generado exitosamente"
+              ls -la barcelona.ics
+            else
+              echo "❌ El script no generó barcelona.ics"
+            fi
+          elif [ -f "barcelona-calendar.py" ]; then
+            echo "✅ Script encontrado: barcelona-calendar.py"
+            # ... mismo proceso
+          else
+            echo "❌ No se encontró ningún script de generación"
+            echo "Archivos Python disponibles:"
+            ls *.py 2>/dev/null || echo "No hay archivos .py"
+          fi
