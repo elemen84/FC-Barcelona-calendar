@@ -1,54 +1,49 @@
-name: 📅 Actualizar Calendario FC Barcelona
+name: 📅 WORKING Calendario
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 6 * * *'  # 6 AM UTC = 7/8 AM hora española
-
-# 👇👇👇 AQUESTA PART VA **FORA** DEL JOB (molt important)
-permissions:
-  contents: write
+    - cron: '0 6 * * *'
 
 jobs:
-  update-calendar:
+  update:
     runs-on: ubuntu-latest
 
+    # Això sempre funciona
+    permissions:
+      contents: write
+
     steps:
-      - name: ⬇️ Checkout del repositorio
-        uses: actions/checkout@v4
-        # NO posis token aquí!
+    - name: ⬇️ Checkout
+      uses: actions/checkout@v4
+      with:
+        # Usa el token per defecte de GitHub
+        token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: 🐍 Configurar Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
+    - name: 🐍 Setup
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
 
-      - name: 📦 Instalar dependencias
-        run: |
-          pip install requests beautifulsoup4 icalendar pytz
+    - name: 📦 Install
+      run: pip install requests beautifulsoup4 icalendar pytz
 
-      - name: 🚀 Ejecutar script de generación
-        run: python barcelona-calendar.py
+    - name: 🚀 Run
+      run: python barcelona-calendar.py
 
-      - name: ⚙️ Configurar Git
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+    - name: ⚙️ Git config
+      run: |
+        git config user.name "Auto Updater"
+        git config user.email "updater@noreply.github.com"
 
-      - name: 🔄 Verificar cambios
-        id: check_changes
-        run: |
-          if git diff --quiet barcelona.ics; then
-            echo "changes=false" >> $GITHUB_OUTPUT
-            echo "✅ No hay cambios en el calendario"
-          else
-            echo "changes=true" >> $GITHUB_OUTPUT
-            echo "🔄 Se detectaron cambios en el calendario"
-          fi
-
-      - name: 💾 Subir cambios si es necesario
-        if: steps.check_changes.outputs.changes == 'true'
-        run: |
-          git add barcelona.ics
-          git commit -m "🤖 Actualización automática del calendario ($(date +'%Y-%m-%d %H:%M'))"
-          git push
+    - name: 💾 Push changes
+      env:
+        # Token explícit per al push
+        GIT_PUSH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        # Configurar remote amb token
+        git remote set-url origin https://x-access-token:${GIT_PUSH_TOKEN}@github.com/$GITHUB_REPOSITORY.git
+        
+        git add barcelona.ics
+        git commit -m "🤖 Update $(date '+%Y-%m-%d %H:%M')" || exit 0
+        git push origin HEAD:master
