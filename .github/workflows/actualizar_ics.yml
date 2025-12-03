@@ -1,9 +1,9 @@
-name: 🗓️ Actualizar Calendario FC Barcelona
+name: 🗓️ Calendario FC Barcelona
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '0 6 * * *'  # 6 AM UTC
 
 permissions:
   contents: write
@@ -11,20 +11,63 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+    
     steps:
-      - uses: actions/checkout@v4
-        
-      - uses: actions/setup-python@v4
+      # 1. Checkout amb tot
+      - name: ⬇️ Descargar repositorio
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Tot l'historial
+          
+      # 2. Python
+      - name: 🐍 Configurar Python
+        uses: actions/setup-python@v4
         with:
           python-version: '3.11'
           
-      - run: pip install requests beautifulsoup4 icalendar pytz
+      # 3. Dependències
+      - name: 📦 Instalar
+        run: pip install requests beautifulsoup4 icalendar pytz
           
-      - run: python barcelona-calendar.py
+      # 4. CLAU: Sincronitzar ABANS de generar
+      - name: 🔄 Sincronizar con GitHub
+        run: |
+          echo "=== Sincronizando ==="
+          # Agafar darrera versió
+          git fetch origin
+          # Moure's a la darrera versió
+          git checkout origin/master
+          echo "✅ Sincronizado"
           
-      - run: |
+      # 5. Generar calendari
+      - name: 🚀 Generar calendario
+        run: python barcelona-calendar.py
+          
+      # 6. Configurar Git
+      - name: ⚙️ Configurar Git
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+      # 7. 💾 FORCE PUSH només del fitxer .ics
+      - name: 💾 Actualizar solo el .ics
+        run: |
+          echo "=== Actualizando barcelona.ics ==="
+          
+          # Agregar archivo
           git add barcelona.ics
-          git commit -m "📅 Update $(date '+%d/%m %H:%M')" || echo "No hay cambios"
-          git push
+          
+          # Solo commit si hay cambios
+          if git diff --cached --quiet; then
+            echo "✅ No hay cambios"
+            exit 0
+          fi
+          
+          # Commit
+          git commit -m "📅 Calendario $(date '+%d/%m %H:%M')"
+          
+          # 🔄 FORCE PUSH només d'aquesta branca
+          echo "=== Haciendo force push ==="
+          git push --force-with-lease origin HEAD:master
+          
+          echo "✅ Actualización completada"
