@@ -1,49 +1,65 @@
-name: 📅 WORKING Calendario
+name: 🗓️ Calendario FC Barcelona
 
 on:
   workflow_dispatch:
   schedule:
     - cron: '0 6 * * *'
 
+permissions:
+  contents: write
+
 jobs:
   update:
     runs-on: ubuntu-latest
 
-    # Això sempre funciona
-    permissions:
-      contents: write
-
     steps:
-    - name: ⬇️ Checkout
-      uses: actions/checkout@v4
-      with:
-        # Usa el token per defecte de GitHub
-        token: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: 🐍 Setup
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
-
-    - name: 📦 Install
-      run: pip install requests beautifulsoup4 icalendar pytz
-
-    - name: 🚀 Run
-      run: python barcelona-calendar.py
-
-    - name: ⚙️ Git config
-      run: |
-        git config user.name "Auto Updater"
-        git config user.email "updater@noreply.github.com"
-
-    - name: 💾 Push changes
-      env:
-        # Token explícit per al push
-        GIT_PUSH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        # Configurar remote amb token
-        git remote set-url origin https://x-access-token:${GIT_PUSH_TOKEN}@github.com/$GITHUB_REPOSITORY.git
-        
-        git add barcelona.ics
-        git commit -m "🤖 Update $(date '+%Y-%m-%d %H:%M')" || exit 0
-        git push origin HEAD:master
+      # 1. Checkout amb l'última versió
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Agafa tot l'historial
+          
+      # 2. Setup Python
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          
+      # 3. Instalar
+      - run: pip install requests beautifulsoup4 icalendar pytz
+          
+      # 4. Generar calendari
+      - run: python barcelona-calendar.py
+          
+      # 5. Configurar Git
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+      # 6. 🔄 SINCRONITZAR sense pull (FETCH + RESET)
+      - name: 🔄 Sincronizar con remoto
+        run: |
+          echo "=== Sincronizando ==="
+          # Agafar els canvis remots
+          git fetch origin
+          # Resetear al remoto (descarta canvis locals no guardats)
+          git reset --hard origin/master
+          echo "✅ Repositorio sincronizado"
+          
+      # 7. 💾 Commit i push (ara sí)
+      - name: 💾 Guardar cambios
+        run: |
+          echo "=== Guardando cambios ==="
+          
+          # Generar ALTRE COP el calendari (després del reset)
+          python barcelona-calendar.py
+          
+          # Agregar i verificar
+          git add barcelona.ics
+          
+          if git diff --cached --quiet; then
+            echo "✅ No hay cambios"
+            exit 0
+          fi
+          
+          git commit -m "📅 Update $(date '+%Y-%m-%d %H:%M UTC')"
+          git push
+          echo "✅ Cambios guardados"
