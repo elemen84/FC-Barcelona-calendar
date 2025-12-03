@@ -30,6 +30,56 @@
             border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
             overflow: hidden;
+            position: relative;
+        }
+
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 8px;
+            z-index: 10;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 5px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .language-flag {
+            width: 32px;
+            height: 24px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 2px solid transparent;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .language-flag:hover {
+            transform: scale(1.08);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        }
+
+        .language-flag.active {
+            border-color: #004D98;
+            box-shadow: 0 0 0 2px rgba(0, 77, 152, 0.3), 0 2px 6px rgba(0,0,0,0.3);
+        }
+
+        .catalan-flag {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Catalonia.svg/2560px-Flag_of_Catalonia.svg.png');
+        }
+
+        .spanish-flag {
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/2560px-Bandera_de_Espa%C3%B1a.svg.png');
+        }
+
+        .english-flag {
+            background-image: url('https://wiki2.railml.org/images/b/b8/UK_flag.png');
         }
 
         .header {
@@ -288,6 +338,18 @@
                 border-radius: 10px;
             }
 
+            .language-selector {
+                top: 15px;
+                right: 15px;
+                gap: 6px;
+                padding: 4px;
+            }
+
+            .language-flag {
+                width: 28px;
+                height: 21px;
+            }
+
             .header {
                 padding: 25px 15px;
             }
@@ -335,115 +397,282 @@
 </head>
 <body>
     <div class="container">
+        <div class="language-selector">
+            <div class="language-flag catalan-flag active" data-lang="ca" title="Català"></div>
+            <div class="language-flag spanish-flag" data-lang="es" title="Español"></div>
+            <div class="language-flag english-flag" data-lang="en" title="English"></div>
+        </div>
+
         <div class="header">
             <div class="logo">FCB</div>
-            <h1>Calendari FC Barcelona</h1>
-            <p class="subtitle">Subscripció oficial de partits</p>
+            <h1 data-i18n="title">Calendari FC Barcelona</h1>
+            <p class="subtitle" data-i18n="subtitle">Subscripció gratuïta de partits</p>
         </div>
 
         <div class="content">
             <div class="features">
                 <div class="feature">
                     <span class="feature-icon">✓</span>
-                    <h3>Actualització Automàtica</h3>
-                    <p>Es sincronitza cada 24 hores</p>
+                    <h3 data-i18n="feature1_title">Actualització Automàtica</h3>
+                    <p data-i18n="feature1_desc">Es sincronitza cada 24 hores</p>
                 </div>
 
                 <div class="feature">
                     <span class="feature-icon">📅</span>
-                    <h3>Format Universal</h3>
-                    <p>Compatible amb totes les apps</p>
+                    <h3 data-i18n="feature2_title">Format Universal</h3>
+                    <p data-i18n="feature2_desc">Compatible amb totes les apps</p>
                 </div>
 
                 <div class="feature">
                     <span class="feature-icon">🔔</span>
-                    <h3>Recordatoris</h3>
-                    <p>Notificacions abans de cada partit</p>
+                    <h3 data-i18n="feature3_title">Recordatoris</h3>
+                    <p data-i18n="feature3_desc">Notificacions abans de cada partit</p>
                 </div>
             </div>
 
             <div class="url-section">
-                <span class="url-label">Enllaç del calendari (.ics)</span>
+                <span class="url-label" data-i18n="url_label">Enllaç del calendari (.ics)</span>
                 <div class="url-container">
                     <div class="url-box">
                         https://elemen84.github.io/FC-Barcelona-calendar/barcelona.ics
                     </div>
-                    <button class="copy-btn" onclick="copyToClipboard()">Copiar enllaç</button>
+                    <button class="copy-btn" onclick="copyToClipboard()" data-i18n="copy_button">Copiar enllaç</button>
                 </div>
             </div>
 
-            <h2 class="instructions-title">Instruccions per plataforma</h2>
+            <h2 class="instructions-title" data-i18n="instructions_title">Instruccions per plataforma</h2>
 
             <div class="platforms">
                 <div class="platform google">
                     <div class="platform-header">
                         <div class="platform-icon">G</div>
-                        <h3>Google Calendar</h3>
+                        <h3 data-i18n="google_title">Google Calendar</h3>
                     </div>
                     <ol>
-                        <li>Obre Google Calendar al teu ordinador</li>
-                        <li>A "Altres calendaris", fes clic a "+"</li>
-                        <li>Selecciona "A partir de l'URL"</li>
-                        <li>Pega l'enllaç i fes clic a "Afegir calendari"</li>
+                        <li data-i18n="google_step1">Obre Google Calendar al teu ordinador</li>
+                        <li data-i18n="google_step2">A "Altres calendaris", fes clic a "+"</li>
+                        <li data-i18n="google_step3">Selecciona "A partir de l'URL"</li>
+                        <li data-i18n="google_step4">Pega l'enllaç i fes clic a "Afegir calendari"</li>
                     </ol>
                 </div>
 
                 <div class="platform apple">
                     <div class="platform-header">
                         <div class="platform-icon">A</div>
-                        <h3>Apple Calendar</h3>
+                        <h3 data-i18n="apple_title">Apple Calendar</h3>
                     </div>
                     <ol>
-                        <li>Obre l'aplicació Calendar</li>
-                        <li>Fes clic a "Arxiu" → "Nova subscripció"</li>
-                        <li>Pega l'enllaç del calendari</li>
-                        <li>Configura les opcions i fes clic a "Subscriure's"</li>
+                        <li data-i18n="apple_step1">Obre l'aplicació Calendar</li>
+                        <li data-i18n="apple_step2">Fes clic a "Arxiu" → "Nova subscripció"</li>
+                        <li data-i18n="apple_step3">Pega l'enllaç del calendari</li>
+                        <li data-i18n="apple_step4">Configura les opcions i fes clic a "Subscriure's"</li>
                     </ol>
                 </div>
 
                 <div class="platform outlook">
                     <div class="platform-header">
                         <div class="platform-icon">O</div>
-                        <h3>Microsoft Outlook</h3>
+                        <h3 data-i18n="outlook_title">Microsoft Outlook</h3>
                     </div>
                     <ol>
-                        <li>Obre Outlook i ves al Calendari</li>
-                        <li>Fes clic dret a "Altres calendaris"</li>
-                        <li>Selecciona "Afegir calendari" → "A partir d'Internet"</li>
-                        <li>Pega l'enllaç i fes clic a "D'acord"</li>
+                        <li data-i18n="outlook_step1">Obre Outlook al teu ordinador</li>
+                        <li data-i18n="outlook_step2">Al Calendari fes clic dret a "Altres calendaris"</li>
+                        <li data-i18n="outlook_step3">Selecciona "Afegir calendari" → "A partir d'Internet"</li>
+                        <li data-i18n="outlook_step4">Pega l'enllaç i fes clic a "D'acord"</li>
                     </ol>
                 </div>
             </div>
 
             <div class="sync-section">
-                <h4>Informació de Sincronització</h4>
-                <p>El calendari s'actualitza automàticament cada dia. Els canvis es veuran a la teva aplicació en un màxim de 24 hores des de la publicació.</p>
+                <h4 data-i18n="sync_title">Informació de Sincronització</h4>
+                <p data-i18n="sync_desc">El calendari s'actualitza automàticament cada dia. Els canvis es veuran a la teva aplicació en un màxim de 24 hores des de la publicació.</p>
                 <div class="status-indicator">
                     <span class="status-dot"></span>
-                    Estat: Actiu i sincronitzant
+                    <span data-i18n="status_text">Estat: Actiu i sincronitzant</span>
                 </div>
             </div>
         </div>
     </div>
 
     <script>
+        // Diccionaris de traduccions
+        const translations = {
+            ca: {
+                title: "Calendari FC Barcelona",
+                subtitle: "Subscripció gratuïta de partits",
+                feature1_title: "Actualització Automàtica",
+                feature1_desc: "Es sincronitza cada 24 hores",
+                feature2_title: "Format Universal",
+                feature2_desc: "Compatible amb totes les apps",
+                feature3_title: "Recordatoris",
+                feature3_desc: "Notificacions abans de cada partit",
+                url_label: "Enllaç del calendari (.ics)",
+                copy_button: "Copiar enllaç",
+                instructions_title: "Instruccions per plataforma",
+                google_title: "Google Calendar",
+                google_step1: "Obre Google Calendar al teu ordinador",
+                google_step2: 'A "Altres calendaris", fes clic a "+"',
+                google_step3: 'Selecciona "A partir de l\'URL"',
+                google_step4: 'Pega l\'enllaç i fes clic a "Afegir calendari"',
+                apple_title: "Apple Calendar",
+                apple_step1: "Obre l'aplicació Calendar",
+                apple_step2: 'Fes clic a "Arxiu" → "Nova subscripció"',
+                apple_step3: "Pega l'enllaç del calendari",
+                apple_step4: 'Configura les opcions i fes clic a "Subscriure\'s"',
+                outlook_title: "Microsoft Outlook",
+                outlook_step1: "Obre Outlook al teu ordinador",
+                outlook_step2: 'Al Calendari fes clic dret a "Altres calendaris"',
+                outlook_step3: 'Selecciona "Afegir calendari" → "A partir d\'Internet"',
+                outlook_step4: "Pega l'enllaç i fes clic a \"D'acord\"",
+                sync_title: "Informació de Sincronització",
+                sync_desc: "El calendari s'actualitza automàticament cada dia. Els canvis es veuran a la teva aplicació en un màxim de 24 hores des de la publicació.",
+                status_text: "Estat: Actiu i sincronitzant",
+                copied_message: "Copiat ✓"
+            },
+            es: {
+                title: "Calendario FC Barcelona",
+                subtitle: "Suscripción gratuita de partidos",
+                feature1_title: "Actualización Automática",
+                feature1_desc: "Se sincroniza cada 24 horas",
+                feature2_title: "Formato Universal",
+                feature2_desc: "Compatible con todas las apps",
+                feature3_title: "Recordatorios",
+                feature3_desc: "Notificaciones antes de cada partido",
+                url_label: "Enlace del calendario (.ics)",
+                copy_button: "Copiar enlace",
+                instructions_title: "Instrucciones por plataforma",
+                google_title: "Google Calendar",
+                google_step1: "Abre Google Calendar en tu ordenador",
+                google_step2: 'En "Otros calendarios", haz clic en "+"',
+                google_step3: 'Selecciona "Desde URL"',
+                google_step4: 'Pega el enlace y haz clic en "Añadir calendario"',
+                apple_title: "Apple Calendar",
+                apple_step1: "Abre la aplicación Calendario",
+                apple_step2: 'Haz clic en "Archivo" → "Nueva suscripción"',
+                apple_step3: "Pega el enlace del calendario",
+                apple_step4: 'Configura las opciones y haz clic en "Suscribirse"',
+                outlook_title: "Microsoft Outlook",
+                outlook_step1: "Abre Outlook en tu ordenador",
+                outlook_step2: 'En el Calendario haz clic derecho en "Otros calendarios"',
+                outlook_step3: 'Selecciona "Añadir calendario" → "Desde Internet"',
+                outlook_step4: "Pega el enlace y haz clic en \"Aceptar\"",
+                sync_title: "Información de Sincronización",
+                sync_desc: "El calendario se actualiza automáticamente cada día. Los cambios se verán en tu aplicación en un máximo de 24 horas desde la publicación.",
+                status_text: "Estado: Activo y sincronizando",
+                copied_message: "Copiado ✓"
+            },
+            en: {
+                title: "FC Barcelona Calendar",
+                subtitle: "Free match subscription",
+                feature1_title: "Automatic Updates",
+                feature1_desc: "Syncs every 24 hours",
+                feature2_title: "Universal Format",
+                feature2_desc: "Compatible with all apps",
+                feature3_title: "Reminders",
+                feature3_desc: "Notifications before each match",
+                url_label: "Calendar link (.ics)",
+                copy_button: "Copy link",
+                instructions_title: "Instructions by platform",
+                google_title: "Google Calendar",
+                google_step1: "Open Google Calendar on your computer",
+                google_step2: 'Under "Other calendars", click "+"',
+                google_step3: 'Select "From URL"',
+                google_step4: 'Paste the link and click "Add calendar"',
+                apple_title: "Apple Calendar",
+                apple_step1: "Open the Calendar app",
+                apple_step2: 'Click "File" → "New Calendar Subscription"',
+                apple_step3: "Paste the calendar link",
+                apple_step4: 'Configure options and click "Subscribe"',
+                outlook_title: "Microsoft Outlook",
+                outlook_step1: "Open Outlook on your computer",
+                outlook_step2: 'In Calendar, right-click on "Other Calendars"',
+                outlook_step3: 'Select "Add Calendar" → "From Internet"',
+                outlook_step4: 'Paste the link and click "OK"',
+                sync_title: "Sync Information",
+                sync_desc: "The calendar updates automatically every day. Changes will appear in your app within 24 hours of publishing.",
+                status_text: "Status: Active and syncing",
+                copied_message: "Copied ✓"
+            }
+        };
+
+        // Función para cambiar idioma
+        function changeLanguage(lang) {
+            // Actualizar todos los elementos con data-i18n
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+
+            // Actualizar atributo lang del html
+            document.documentElement.setAttribute('lang', lang);
+
+            // Actualizar banderas activas
+            document.querySelectorAll('.language-flag').forEach(flag => {
+                if (flag.getAttribute('data-lang') === lang) {
+                    flag.classList.add('active');
+                } else {
+                    flag.classList.remove('active');
+                }
+            });
+
+            // Guardar preferencia en localStorage
+            localStorage.setItem('preferredLanguage', lang);
+        }
+
+        // Inicializar eventos de banderas
+        document.querySelectorAll('.language-flag').forEach(flag => {
+            flag.addEventListener('click', function() {
+                const lang = this.getAttribute('data-lang');
+                changeLanguage(lang);
+            });
+        });
+
+        // Detectar idioma preferido del navegador o usar guardado
+        function detectLanguage() {
+            const savedLang = localStorage.getItem('preferredLanguage');
+            if (savedLang) {
+                return savedLang;
+            }
+
+            const browserLang = navigator.language || navigator.userLanguage;
+            if (browserLang.startsWith('es')) {
+                return 'es';
+            } else if (browserLang.startsWith('ca')) {
+                return 'ca';
+            } else if (browserLang.startsWith('en')) {
+                return 'en';
+            }
+
+            return 'ca'; // Por defecto
+        }
+
+        // Inicializar con idioma detectado
+        document.addEventListener('DOMContentLoaded', function() {
+            const lang = detectLanguage();
+            changeLanguage(lang);
+        });
+
+        // Función para copiar al portapapeles
         function copyToClipboard() {
             const url = 'https://elemen84.github.io/FC-Barcelona-calendar/barcelona.ics';
             const btn = document.querySelector('.copy-btn');
+            const currentLang = document.documentElement.getAttribute('lang') || 'ca';
 
             // Intentar usar Clipboard API modern
             if (navigator.clipboard && window.isSecureContext) {
                 navigator.clipboard.writeText(url).then(() => {
-                    showCopySuccess(btn);
+                    showCopySuccess(btn, currentLang);
                 }).catch(() => {
-                    fallbackCopy(url, btn);
+                    fallbackCopy(url, btn, currentLang);
                 });
             } else {
-                fallbackCopy(url, btn);
+                fallbackCopy(url, btn, currentLang);
             }
         }
 
-        function fallbackCopy(text, btn) {
+        function fallbackCopy(text, btn, lang) {
             const textArea = document.createElement('textarea');
             textArea.value = text;
             textArea.style.position = 'fixed';
@@ -455,17 +684,23 @@
 
             try {
                 document.execCommand('copy');
-                showCopySuccess(btn);
+                showCopySuccess(btn, lang);
             } catch (err) {
-                alert('No es pot copiar l\'enllaç. Si us plau, selecciona el text i copia\'l manualment.');
+                let errorMessage = "No es pot copiar l'enllaç. Si us plau, selecciona el text i copia'l manualment.";
+                if (lang === 'es') {
+                    errorMessage = "No se puede copiar el enlace. Por favor, selecciona el texto y cópialo manualmente.";
+                } else if (lang === 'en') {
+                    errorMessage = "Cannot copy link. Please select the text and copy it manually.";
+                }
+                alert(errorMessage);
             }
 
             document.body.removeChild(textArea);
         }
 
-        function showCopySuccess(btn) {
+        function showCopySuccess(btn, lang) {
             const originalText = btn.textContent;
-            btn.textContent = 'Copiat ✓';
+            btn.textContent = translations[lang].copied_message;
             btn.classList.add('copied');
 
             setTimeout(() => {
