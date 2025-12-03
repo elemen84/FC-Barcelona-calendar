@@ -1,4 +1,4 @@
-name: 🗓️ Calendario FC Barcelona
+name: 🗓️ Actualizar Calendario FC Barcelona
 
 on:
   workflow_dispatch:
@@ -11,55 +11,20 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
-
     steps:
-      # 1. Checkout amb l'última versió
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # Agafa tot l'historial
-          
-      # 2. Setup Python
+        
       - uses: actions/setup-python@v4
         with:
           python-version: '3.11'
           
-      # 3. Instalar
       - run: pip install requests beautifulsoup4 icalendar pytz
           
-      # 4. Generar calendari
       - run: python barcelona-calendar.py
           
-      # 5. Configurar Git
       - run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          
-      # 6. 🔄 SINCRONITZAR sense pull (FETCH + RESET)
-      - name: 🔄 Sincronizar con remoto
-        run: |
-          echo "=== Sincronizando ==="
-          # Agafar els canvis remots
-          git fetch origin
-          # Resetear al remoto (descarta canvis locals no guardats)
-          git reset --hard origin/master
-          echo "✅ Repositorio sincronizado"
-          
-      # 7. 💾 Commit i push (ara sí)
-      - name: 💾 Guardar cambios
-        run: |
-          echo "=== Guardando cambios ==="
-          
-          # Generar ALTRE COP el calendari (després del reset)
-          python barcelona-calendar.py
-          
-          # Agregar i verificar
           git add barcelona.ics
-          
-          if git diff --cached --quiet; then
-            echo "✅ No hay cambios"
-            exit 0
-          fi
-          
-          git commit -m "📅 Update $(date '+%Y-%m-%d %H:%M UTC')"
+          git commit -m "📅 Update $(date '+%d/%m %H:%M')" || echo "No hay cambios"
           git push
-          echo "✅ Cambios guardados"
