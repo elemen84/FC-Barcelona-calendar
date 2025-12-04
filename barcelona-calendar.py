@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from icalendar import Calendar, Event
+from icalendar import Calendar, Event, Alarm
 from datetime import datetime, timedelta
 import pytz
 import re
@@ -14,7 +14,6 @@ OUTPUT_FILE = 'barcelona.ics'
 
 
 # --- Funciones de Web Scraping y ICS ---
-
 def scrape_barcelona_calendar():
     """Extrae los partidos del Barcelona del sitio web - SOLO LALIGA y Champions"""
     url = "https://as.com/resultados/ficha/equipo/barcelona/3/calendario/"
@@ -60,13 +59,24 @@ def scrape_barcelona_calendar():
 
                 team_elements = container.find_all('span', class_='nombre-equipo')
                 teams = "FC Barcelona vs Rival"
+                rival = "Rival"
                 is_home_match = True
 
                 if len(team_elements) >= 2:
                     team1 = team_elements[0].get_text(strip=True)
                     team2 = team_elements[1].get_text(strip=True)
-                    teams = f"{team1} vs {team2}"
-                    is_home_match = "Barcelona" in team1 or "Barça" in team1
+                    
+                    # Determinar quién es el Barcelona y quién el rival
+                    if "Barcelona" in team1 or "Barça" in team1:
+                        is_home_match = True
+                        rival = team2
+                        teams = f"FC Barcelona vs {rival}"
+                    elif "Barcelona" in team2 or "Barça" in team2:
+                        is_home_match = False
+                        rival = team1
+                        teams = f"FC Barcelona vs {rival}"
+                    else:
+                        teams = f"{team1} vs {team2}"
 
                 resultado = ""
                 for class_name in ['resultado', 'marcador', 'score']:
@@ -84,6 +94,7 @@ def scrape_barcelona_calendar():
                     'time_str': time_str,
                     'competition': competition,
                     'teams': teams,
+                    'rival': rival,
                     'resultado': resultado,
                     'is_home_match': is_home_match
                 }
@@ -136,6 +147,7 @@ def create_ics_calendar(matches):
             match_dt = spain_tz.localize(match_dt_naive)
 
             is_home_match = match.get('is_home_match', True)
+            rival = match.get('rival', 'Rival')
 
             # Colores según localía
             if is_home_match:
@@ -144,7 +156,7 @@ def create_ics_calendar(matches):
                 emoji = "🏠"
             else:
                 color = "#A50044"  # Granate visitante
-                location = "Fuera de casa"
+                location = "Estadio del rival"
                 emoji = "✈️"
 
             resultado = match.get('resultado', '')
@@ -161,12 +173,12 @@ def create_ics_calendar(matches):
             # Formato del evento según si ya se jugó
             if resultado and re.search(r'\d+\s*-\s*\d+', resultado):
                 resultado_limpio = re.sub(r'\s+', ' ', resultado).strip()
-                summary = f"{emoji} ⚽ {match['teams']} ({resultado_limpio})"
-                description = f"Resultado: {resultado_limpio}\nCompetición: {competicion}"
+                summary = f"{emoji} Barcelona vs {rival}"
+                description = f"⚽ Resultado: {resultado_limpio}\n🏆 Competición: {competicion}\n📍 {location}"
                 end_time = match_dt + timedelta(hours=2, minutes=15)
             else:
-                summary = f"{emoji} {match['teams']}"
-                description = f"Partido: {match['teams']}\nCompetición: {competicion}"
+                summary = f"{emoji} Barcelona vs {rival}"
+                description = f"⚽ FC Barcelona vs {rival}\n🏆 Competición: {competicion}\n📍 {location}"
                 end_time = match_dt + timedelta(hours=2)
 
             event.add('summary', summary)
@@ -176,15 +188,26 @@ def create_ics_calendar(matches):
             event.add('dtstamp', datetime.now(pytz.UTC))
             event.add('location', location)
 
+            # --- AÑADIR ALARMA 24 HORAS ANTES ---
+            alarm = Alarm()
+            alarm.add('action', 'DISPLAY')  # Mostrar notificación
+            alarm.add('description', f"⏰ Recordatorio: Barcelona vs {rival} en 24 horas")
+            
+            # Notificación 24 horas antes del partido
+            alarm.add('trigger', timedelta(hours=-24))
+            event.add_component(alarm)
+
             # Añadir color para calendarios que lo soportan
             event.add('X-APPLE-CALENDAR-COLOR', color)
             event.add('COLOR', color)
 
             # UID único para cada evento
-            uid = f"barca_{match_dt.strftime('%Y%m%d%H%M')}_{hash(match['teams']) % 10000}@github.com"
+            uid = f"barca_{match_dt.strftime('%Y%m%d%H%M')}_{hash(rival) % 10000}@github.com"
             event.add('uid', uid)
 
             cal.add_component(event)
+
+            print(f"📅 Evento creado: {summary} - {match_dt.strftime('%d/%m/%Y %H:%M')}")
 
         except Exception as e:
             print(f"❌ Error procesando partido {match}: {e}")
@@ -197,12 +220,15 @@ def create_ics_calendar(matches):
 
 if __name__ == '__main__':
     print("🔄 Iniciando generación de calendario FC Barcelona...")
+    print("📱 Formato: Emoji + 'Barcelona vs Rival' en título")
+    print("🔔 Alarmas: 24 horas antes de cada partido")
+    print("📝 Detalles completos en la descripción del evento\n")
 
     # En GitHub Actions, SIEMPRE generamos el archivo
     matches = scrape_barcelona_calendar()
 
     if matches:
-        print(f"📊 Partidos encontrados: {len(matches)}")
+        print(f"\n📊 Partidos encontrados: {len(matches)}")
 
         calendar = create_ics_calendar(matches)
         ics_content = calendar.to_ical()
@@ -211,12 +237,15 @@ if __name__ == '__main__':
         try:
             with open(OUTPUT_FILE, 'wb') as f:
                 f.write(ics_content)
-            print(f"✅ Calendario ICS guardado exitosamente en {OUTPUT_FILE}")
+            print(f"\n✅ Calendario ICS guardado exitosamente en {OUTPUT_FILE}")
 
             # Mostrar información del archivo generado
             file_size = os.path.getsize(OUTPUT_FILE)
             print(f"📏 Tamaño del archivo: {file_size} bytes")
             print(f"🗓️  Partidos en calendario: {len(matches)}")
+            print(f"🔔 Alarmas configuradas: 24 horas antes de cada partido")
+            print(f"🎯 Formato título: Emoji + 'Barcelona vs Rival'")
+            print(f"📋 Detalles completos en descripción del evento")
 
         except Exception as e:
             print(f"❌ Error guardando {OUTPUT_FILE}: {e}")
