@@ -9,555 +9,785 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 X-WR-TIMEZONE:Europe/Madrid
 BEGIN:VEVENT
-SUMMARY:✈️ ⚽ Mallorca vs Barcelona (Mallorca0 - 3Barcelona)
+SUMMARY:✈️ Barcelona vs Mallorca
 DTSTART;TZID=Europe/Madrid:20260816T193000
 DTEND;TZID=Europe/Madrid:20260816T214500
-DTSTAMP:20251204T061509Z
-UID:barca_202608161930_2835@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202608161930_5989@github.com
 COLOR:#A50044
-DESCRIPTION:Resultado: Mallorca0 - 3Barcelona\nCompetición: LALIGA EA Spo
- rts 2025/2026
-LOCATION:Fuera de casa
+DESCRIPTION:⚽ Resultado: Mallorca0 - 3Barcelona\n🏆 Competición: LALI
+ GA EA Sports 2025/2026\n📍 Estadio del rival
+LOCATION:Estadio del rival
 X-APPLE-CALENDAR-COLOR:#A50044
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Mallorca en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✈️ ⚽ Levante vs Barcelona (Levante2 - 3Barcelona)
+SUMMARY:✈️ Barcelona vs Levante
 DTSTART;TZID=Europe/Madrid:20260823T213000
 DTEND;TZID=Europe/Madrid:20260823T234500
-DTSTAMP:20251204T061509Z
-UID:barca_202608232130_669@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202608232130_8225@github.com
 COLOR:#A50044
-DESCRIPTION:Resultado: Levante2 - 3Barcelona\nCompetición: LALIGA EA Spor
- ts 2025/2026
-LOCATION:Fuera de casa
+DESCRIPTION:⚽ Resultado: Levante2 - 3Barcelona\n🏆 Competición: LALIG
+ A EA Sports 2025/2026\n📍 Estadio del rival
+LOCATION:Estadio del rival
 X-APPLE-CALENDAR-COLOR:#A50044
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Levante en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✈️ ⚽ Rayo vs Barcelona (Rayo1 - 1Barcelona)
+SUMMARY:✈️ Barcelona vs Rayo
 DTSTART;TZID=Europe/Madrid:20260831T213000
 DTEND;TZID=Europe/Madrid:20260831T234500
-DTSTAMP:20251204T061509Z
-UID:barca_202608312130_3625@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202608312130_8981@github.com
 COLOR:#A50044
-DESCRIPTION:Resultado: Rayo1 - 1Barcelona\nCompetición: LALIGA EA Sports 
- 2025/2026
-LOCATION:Fuera de casa
+DESCRIPTION:⚽ Resultado: Rayo1 - 1Barcelona\n🏆 Competición: LALIGA E
+ A Sports 2025/2026\n📍 Estadio del rival
+LOCATION:Estadio del rival
 X-APPLE-CALENDAR-COLOR:#A50044
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Rayo en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🏠 ⚽ Barcelona vs Valencia (Barcelona6 - 0Valencia)
+SUMMARY:🏠 Barcelona vs Valencia
 DTSTART;TZID=Europe/Madrid:20260914T210000
 DTEND;TZID=Europe/Madrid:20260914T231500
-DTSTAMP:20251204T061509Z
-UID:barca_202609142100_2863@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202609142100_266@github.com
 COLOR:#004D98
-DESCRIPTION:Resultado: Barcelona6 - 0Valencia\nCompetición: LALIGA EA Spo
- rts 2025/2026
+DESCRIPTION:⚽ Resultado: Barcelona6 - 0Valencia\n🏆 Competición: LALI
+ GA EA Sports 2025/2026\n📍 Spotify Camp Nou
 LOCATION:Spotify Camp Nou
 X-APPLE-CALENDAR-COLOR:#004D98
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Valencia en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✈️ ⚽ Newcastle vs Barcelona (Newcastle1 - 2Barcelona)
+SUMMARY:✈️ Barcelona vs Newcastle
 DTSTART;TZID=Europe/Madrid:20260918T210000
 DTEND;TZID=Europe/Madrid:20260918T231500
-DTSTAMP:20251204T061509Z
-UID:barca_202609182100_3226@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202609182100_7680@github.com
 COLOR:#A50044
-DESCRIPTION:Resultado: Newcastle1 - 2Barcelona\nCompetición: Champions Le
- ague 2025/2026
-LOCATION:Fuera de casa
+DESCRIPTION:⚽ Resultado: Newcastle1 - 2Barcelona\n🏆 Competición: Cha
+ mpions League 2025/2026\n📍 Estadio del rival
+LOCATION:Estadio del rival
 X-APPLE-CALENDAR-COLOR:#A50044
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Newcastle en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🏠 ⚽ Barcelona vs Getafe (Barcelona3 - 0Getafe)
+SUMMARY:🏠 Barcelona vs Getafe
 DTSTART;TZID=Europe/Madrid:20260921T210000
 DTEND;TZID=Europe/Madrid:20260921T231500
-DTSTAMP:20251204T061509Z
-UID:barca_202609212100_8714@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202609212100_9110@github.com
 COLOR:#004D98
-DESCRIPTION:Resultado: Barcelona3 - 0Getafe\nCompetición: LALIGA EA Sport
- s 2025/2026
+DESCRIPTION:⚽ Resultado: Barcelona3 - 0Getafe\n🏆 Competición: LALIGA
+  EA Sports 2025/2026\n📍 Spotify Camp Nou
 LOCATION:Spotify Camp Nou
 X-APPLE-CALENDAR-COLOR:#004D98
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Getafe en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✈️ ⚽ Oviedo vs Barcelona (Oviedo1 - 3Barcelona)
+SUMMARY:✈️ Barcelona vs Oviedo
 DTSTART;TZID=Europe/Madrid:20260925T213000
 DTEND;TZID=Europe/Madrid:20260925T234500
-DTSTAMP:20251204T061509Z
-UID:barca_202609252130_8690@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202609252130_2544@github.com
 COLOR:#A50044
-DESCRIPTION:Resultado: Oviedo1 - 3Barcelona\nCompetición: LALIGA EA Sport
- s 2025/2026
-LOCATION:Fuera de casa
+DESCRIPTION:⚽ Resultado: Oviedo1 - 3Barcelona\n🏆 Competición: LALIGA
+  EA Sports 2025/2026\n📍 Estadio del rival
+LOCATION:Estadio del rival
 X-APPLE-CALENDAR-COLOR:#A50044
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Oviedo en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🏠 ⚽ Barcelona vs R. Sociedad (Barcelona2 - 1R. Sociedad)
+SUMMARY:🏠 Barcelona vs R. Sociedad
 DTSTART;TZID=Europe/Madrid:20260928T183000
 DTEND;TZID=Europe/Madrid:20260928T204500
-DTSTAMP:20251204T061509Z
-UID:barca_202609281830_5199@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202609281830_7564@github.com
 COLOR:#004D98
-DESCRIPTION:Resultado: Barcelona2 - 1R. Sociedad\nCompetición: LALIGA EA 
- Sports 2025/2026
+DESCRIPTION:⚽ Resultado: Barcelona2 - 1R. Sociedad\n🏆 Competición: L
+ ALIGA EA Sports 2025/2026\n📍 Spotify Camp Nou
 LOCATION:Spotify Camp Nou
 X-APPLE-CALENDAR-COLOR:#004D98
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs R. Sociedad en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🏠 ⚽ Barcelona vs PSG (Barcelona1 - 2PSG)
+SUMMARY:🏠 Barcelona vs PSG
 DTSTART;TZID=Europe/Madrid:20261001T210000
 DTEND;TZID=Europe/Madrid:20261001T231500
-DTSTAMP:20251204T061509Z
-UID:barca_202610012100_6465@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202610012100_5880@github.com
 COLOR:#004D98
-DESCRIPTION:Resultado: Barcelona1 - 2PSG\nCompetición: Champions League 2
- 025/2026
+DESCRIPTION:⚽ Resultado: Barcelona1 - 2PSG\n🏆 Competición: Champions
+  League 2025/2026\n📍 Spotify Camp Nou
 LOCATION:Spotify Camp Nou
 X-APPLE-CALENDAR-COLOR:#004D98
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs PSG en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✈️ ⚽ Sevilla vs Barcelona (Sevilla4 - 1Barcelona)
+SUMMARY:✈️ Barcelona vs Sevilla
 DTSTART;TZID=Europe/Madrid:20261005T161500
 DTEND;TZID=Europe/Madrid:20261005T183000
-DTSTAMP:20251204T061509Z
-UID:barca_202610051615_5890@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202610051615_9073@github.com
 COLOR:#A50044
-DESCRIPTION:Resultado: Sevilla4 - 1Barcelona\nCompetición: LALIGA EA Spor
- ts 2025/2026
-LOCATION:Fuera de casa
+DESCRIPTION:⚽ Resultado: Sevilla4 - 1Barcelona\n🏆 Competición: LALIG
+ A EA Sports 2025/2026\n📍 Estadio del rival
+LOCATION:Estadio del rival
 X-APPLE-CALENDAR-COLOR:#A50044
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Sevilla en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🏠 ⚽ Barcelona vs Girona (Barcelona2 - 1Girona)
+SUMMARY:🏠 Barcelona vs Girona
 DTSTART;TZID=Europe/Madrid:20261018T161500
 DTEND;TZID=Europe/Madrid:20261018T183000
-DTSTAMP:20251204T061509Z
-UID:barca_202610181615_1246@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202610181615_6134@github.com
 COLOR:#004D98
-DESCRIPTION:Resultado: Barcelona2 - 1Girona\nCompetición: LALIGA EA Sport
- s 2025/2026
+DESCRIPTION:⚽ Resultado: Barcelona2 - 1Girona\n🏆 Competición: LALIGA
+  EA Sports 2025/2026\n📍 Spotify Camp Nou
 LOCATION:Spotify Camp Nou
 X-APPLE-CALENDAR-COLOR:#004D98
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Girona en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🏠 ⚽ Barcelona vs Olympiacos (Barcelona6 - 1Olympiacos)
+SUMMARY:🏠 Barcelona vs Olympiacos
 DTSTART;TZID=Europe/Madrid:20261021T184500
 DTEND;TZID=Europe/Madrid:20261021T210000
-DTSTAMP:20251204T061509Z
-UID:barca_202610211845_5435@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202610211845_5531@github.com
 COLOR:#004D98
-DESCRIPTION:Resultado: Barcelona6 - 1Olympiacos\nCompetición: Champions L
- eague 2025/2026
+DESCRIPTION:⚽ Resultado: Barcelona6 - 1Olympiacos\n🏆 Competición: Ch
+ ampions League 2025/2026\n📍 Spotify Camp Nou
 LOCATION:Spotify Camp Nou
 X-APPLE-CALENDAR-COLOR:#004D98
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Olympiacos en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✈️ ⚽ Real Madrid vs Barcelona (Real Madrid2 - 1Barcelona)
+SUMMARY:✈️ Barcelona vs Real Madrid
 DTSTART;TZID=Europe/Madrid:20261026T161500
 DTEND;TZID=Europe/Madrid:20261026T183000
-DTSTAMP:20251204T061509Z
-UID:barca_202610261615_1213@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202610261615_4265@github.com
 COLOR:#A50044
-DESCRIPTION:Resultado: Real Madrid2 - 1Barcelona\nCompetición: LALIGA EA 
- Sports 2025/2026
-LOCATION:Fuera de casa
+DESCRIPTION:⚽ Resultado: Real Madrid2 - 1Barcelona\n🏆 Competición: L
+ ALIGA EA Sports 2025/2026\n📍 Estadio del rival
+LOCATION:Estadio del rival
 X-APPLE-CALENDAR-COLOR:#A50044
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Real Madrid en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🏠 ⚽ Barcelona vs Elche (Barcelona3 - 1Elche)
+SUMMARY:🏠 Barcelona vs Elche
 DTSTART;TZID=Europe/Madrid:20261102T183000
 DTEND;TZID=Europe/Madrid:20261102T204500
-DTSTAMP:20251204T061509Z
-UID:barca_202611021830_8912@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202611021830_4139@github.com
 COLOR:#004D98
-DESCRIPTION:Resultado: Barcelona3 - 1Elche\nCompetición: LALIGA EA Sports
-  2025/2026
+DESCRIPTION:⚽ Resultado: Barcelona3 - 1Elche\n🏆 Competición: LALIGA 
+ EA Sports 2025/2026\n📍 Spotify Camp Nou
 LOCATION:Spotify Camp Nou
 X-APPLE-CALENDAR-COLOR:#004D98
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Elche en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✈️ ⚽ Brujas vs Barcelona (Brujas3 - 3Barcelona)
+SUMMARY:✈️ Barcelona vs Brujas
 DTSTART;TZID=Europe/Madrid:20261105T210000
 DTEND;TZID=Europe/Madrid:20261105T231500
-DTSTAMP:20251204T061509Z
-UID:barca_202611052100_2366@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202611052100_3479@github.com
 COLOR:#A50044
-DESCRIPTION:Resultado: Brujas3 - 3Barcelona\nCompetición: Champions Leagu
- e 2025/2026
-LOCATION:Fuera de casa
+DESCRIPTION:⚽ Resultado: Brujas3 - 3Barcelona\n🏆 Competición: Champi
+ ons League 2025/2026\n📍 Estadio del rival
+LOCATION:Estadio del rival
 X-APPLE-CALENDAR-COLOR:#A50044
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Brujas en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✈️ ⚽ Celta vs Barcelona (Celta2 - 4Barcelona)
+SUMMARY:✈️ Barcelona vs Celta
 DTSTART;TZID=Europe/Madrid:20261109T210000
 DTEND;TZID=Europe/Madrid:20261109T231500
-DTSTAMP:20251204T061509Z
-UID:barca_202611092100_3779@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202611092100_6016@github.com
 COLOR:#A50044
-DESCRIPTION:Resultado: Celta2 - 4Barcelona\nCompetición: LALIGA EA Sports
-  2025/2026
-LOCATION:Fuera de casa
+DESCRIPTION:⚽ Resultado: Celta2 - 4Barcelona\n🏆 Competición: LALIGA 
+ EA Sports 2025/2026\n📍 Estadio del rival
+LOCATION:Estadio del rival
 X-APPLE-CALENDAR-COLOR:#A50044
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Celta en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🏠 ⚽ Barcelona vs Athletic (Barcelona4 - 0Athletic)
+SUMMARY:🏠 Barcelona vs Athletic
 DTSTART;TZID=Europe/Madrid:20261122T161500
 DTEND;TZID=Europe/Madrid:20261122T183000
-DTSTAMP:20251204T061509Z
-UID:barca_202611221615_4148@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202611221615_1676@github.com
 COLOR:#004D98
-DESCRIPTION:Resultado: Barcelona4 - 0Athletic\nCompetición: LALIGA EA Spo
- rts 2025/2026
+DESCRIPTION:⚽ Resultado: Barcelona4 - 0Athletic\n🏆 Competición: LALI
+ GA EA Sports 2025/2026\n📍 Spotify Camp Nou
 LOCATION:Spotify Camp Nou
 X-APPLE-CALENDAR-COLOR:#004D98
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Athletic en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✈️ ⚽ Chelsea vs Barcelona (Chelsea3 - 0Barcelona)
+SUMMARY:✈️ Barcelona vs Chelsea
 DTSTART;TZID=Europe/Madrid:20261125T210000
 DTEND;TZID=Europe/Madrid:20261125T231500
-DTSTAMP:20251204T061509Z
-UID:barca_202611252100_309@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202611252100_7292@github.com
 COLOR:#A50044
-DESCRIPTION:Resultado: Chelsea3 - 0Barcelona\nCompetición: Champions Leag
- ue 2025/2026
-LOCATION:Fuera de casa
+DESCRIPTION:⚽ Resultado: Chelsea3 - 0Barcelona\n🏆 Competición: Champ
+ ions League 2025/2026\n📍 Estadio del rival
+LOCATION:Estadio del rival
 X-APPLE-CALENDAR-COLOR:#A50044
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Chelsea en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🏠 ⚽ Barcelona vs Alavés (Barcelona3 - 1Alavés)
+SUMMARY:🏠 Barcelona vs Alavés
 DTSTART;TZID=Europe/Madrid:20261129T161500
 DTEND;TZID=Europe/Madrid:20261129T183000
-DTSTAMP:20251204T061509Z
-UID:barca_202611291615_3115@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202611291615_159@github.com
 COLOR:#004D98
-DESCRIPTION:Resultado: Barcelona3 - 1Alavés\nCompetición: LALIGA EA Spor
- ts 2025/2026
+DESCRIPTION:⚽ Resultado: Barcelona3 - 1Alavés\n🏆 Competición: LALIG
+ A EA Sports 2025/2026\n📍 Spotify Camp Nou
 LOCATION:Spotify Camp Nou
 X-APPLE-CALENDAR-COLOR:#004D98
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Alavés en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:🏠 ⚽ Barcelona vs Atlético (Barcelona3 - 1Atlético)
+SUMMARY:🏠 Barcelona vs Atlético
 DTSTART;TZID=Europe/Madrid:20251202T210000
 DTEND;TZID=Europe/Madrid:20251202T231500
-DTSTAMP:20251204T061509Z
-UID:barca_202512022100_6293@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202512022100_4629@github.com
 COLOR:#004D98
-DESCRIPTION:Resultado: Barcelona3 - 1Atlético\nCompetición: LALIGA EA Sp
- orts 2025/2026
+DESCRIPTION:⚽ Resultado: Barcelona3 - 1Atlético\n🏆 Competición: LAL
+ IGA EA Sports 2025/2026\n📍 Spotify Camp Nou
 LOCATION:Spotify Camp Nou
 X-APPLE-CALENDAR-COLOR:#004D98
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Atlético en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✈️ Betis vs Barcelona
+SUMMARY:✈️ Barcelona vs Betis
 DTSTART;TZID=Europe/Madrid:20251206T183000
 DTEND;TZID=Europe/Madrid:20251206T203000
-DTSTAMP:20251204T061509Z
-UID:barca_202512061830_2600@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202512061830_4228@github.com
 COLOR:#A50044
-DESCRIPTION:Partido: Betis vs Barcelona\nCompetición: LALIGA EA Sports 20
- 25/2026
-LOCATION:Fuera de casa
+DESCRIPTION:⚽ FC Barcelona vs Betis\n🏆 Competición: LALIGA EA Sports
+  2025/2026\n📍 Estadio del rival
+LOCATION:Estadio del rival
 X-APPLE-CALENDAR-COLOR:#A50044
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Betis en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Eintracht Fr.
 DTSTART;TZID=Europe/Madrid:20251209T210000
 DTEND;TZID=Europe/Madrid:20251209T230000
-DTSTAMP:20251204T061509Z
-UID:barca_202512092100_2409@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202512092100_4034@github.com
 COLOR:#004D98
-DESCRIPTION:Partido: Barcelona vs Eintracht Fr.\nCompetición: Champions L
- eague 2025/2026
+DESCRIPTION:⚽ FC Barcelona vs Eintracht Fr.\n🏆 Competición: Champion
+ s League 2025/2026\n📍 Spotify Camp Nou
 LOCATION:Spotify Camp Nou
 X-APPLE-CALENDAR-COLOR:#004D98
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Eintracht Fr. en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Osasuna
 DTSTART;TZID=Europe/Madrid:20251213T183000
 DTEND;TZID=Europe/Madrid:20251213T203000
-DTSTAMP:20251204T061509Z
-UID:barca_202512131830_3465@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202512131830_7651@github.com
 COLOR:#004D98
-DESCRIPTION:Partido: Barcelona vs Osasuna\nCompetición: LALIGA EA Sports 
- 2025/2026
+DESCRIPTION:⚽ FC Barcelona vs Osasuna\n🏆 Competición: LALIGA EA Spor
+ ts 2025/2026\n📍 Spotify Camp Nou
 LOCATION:Spotify Camp Nou
 X-APPLE-CALENDAR-COLOR:#004D98
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Osasuna en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✈️ Villarreal vs Barcelona
+SUMMARY:✈️ Barcelona vs Villarreal
 DTSTART;TZID=Europe/Madrid:20251221T161500
 DTEND;TZID=Europe/Madrid:20251221T181500
-DTSTAMP:20251204T061509Z
-UID:barca_202512211615_2914@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202512211615_3468@github.com
 COLOR:#A50044
-DESCRIPTION:Partido: Villarreal vs Barcelona\nCompetición: LALIGA EA Spor
- ts 2025/2026
-LOCATION:Fuera de casa
+DESCRIPTION:⚽ FC Barcelona vs Villarreal\n🏆 Competición: LALIGA EA S
+ ports 2025/2026\n📍 Estadio del rival
+LOCATION:Estadio del rival
 X-APPLE-CALENDAR-COLOR:#A50044
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Villarreal en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✈️ Espanyol vs Barcelona
+SUMMARY:✈️ Barcelona vs Espanyol
 DTSTART;TZID=Europe/Madrid:20260103T210000
 DTEND;TZID=Europe/Madrid:20260103T230000
-DTSTAMP:20251204T061509Z
-UID:barca_202601032100_1380@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202601032100_323@github.com
 COLOR:#A50044
-DESCRIPTION:Partido: Espanyol vs Barcelona\nCompetición: LALIGA EA Sports
-  2025/2026
-LOCATION:Fuera de casa
+DESCRIPTION:⚽ FC Barcelona vs Espanyol\n🏆 Competición: LALIGA EA Spo
+ rts 2025/2026\n📍 Estadio del rival
+LOCATION:Estadio del rival
 X-APPLE-CALENDAR-COLOR:#A50044
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Espanyol en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✈️ R. Sociedad vs Barcelona
+SUMMARY:✈️ Barcelona vs R. Sociedad
 DTSTART;TZID=Europe/Madrid:20260118T170000
 DTEND;TZID=Europe/Madrid:20260118T190000
-DTSTAMP:20251204T061509Z
-UID:barca_202601181700_4070@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202601181700_7564@github.com
 COLOR:#A50044
-DESCRIPTION:Partido: R. Sociedad vs Barcelona\nCompetición: LALIGA EA Spo
- rts 2025/2026
-LOCATION:Fuera de casa
+DESCRIPTION:⚽ FC Barcelona vs R. Sociedad\n🏆 Competición: LALIGA EA 
+ Sports 2025/2026\n📍 Estadio del rival
+LOCATION:Estadio del rival
 X-APPLE-CALENDAR-COLOR:#A50044
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs R. Sociedad en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✈️ Slavia P. vs Barcelona
+SUMMARY:✈️ Barcelona vs Slavia P.
 DTSTART;TZID=Europe/Madrid:20260121T210000
 DTEND;TZID=Europe/Madrid:20260121T230000
-DTSTAMP:20251204T061509Z
-UID:barca_202601212100_9314@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202601212100_2280@github.com
 COLOR:#A50044
-DESCRIPTION:Partido: Slavia P. vs Barcelona\nCompetición: Champions Leagu
- e 2025/2026
-LOCATION:Fuera de casa
+DESCRIPTION:⚽ FC Barcelona vs Slavia P.\n🏆 Competición: Champions Le
+ ague 2025/2026\n📍 Estadio del rival
+LOCATION:Estadio del rival
 X-APPLE-CALENDAR-COLOR:#A50044
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Slavia P. en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Oviedo
 DTSTART;TZID=Europe/Madrid:20260125T170000
 DTEND;TZID=Europe/Madrid:20260125T190000
-DTSTAMP:20251204T061509Z
-UID:barca_202601251700_4652@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202601251700_2544@github.com
 COLOR:#004D98
-DESCRIPTION:Partido: Barcelona vs Oviedo\nCompetición: LALIGA EA Sports 2
- 025/2026
+DESCRIPTION:⚽ FC Barcelona vs Oviedo\n🏆 Competición: LALIGA EA Sport
+ s 2025/2026\n📍 Spotify Camp Nou
 LOCATION:Spotify Camp Nou
 X-APPLE-CALENDAR-COLOR:#004D98
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Oviedo en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Copenhague
 DTSTART;TZID=Europe/Madrid:20260128T210000
 DTEND;TZID=Europe/Madrid:20260128T230000
-DTSTAMP:20251204T061509Z
-UID:barca_202601282100_9098@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202601282100_8744@github.com
 COLOR:#004D98
-DESCRIPTION:Partido: Barcelona vs Copenhague\nCompetición: Champions Leag
- ue 2025/2026
+DESCRIPTION:⚽ FC Barcelona vs Copenhague\n🏆 Competición: Champions L
+ eague 2025/2026\n📍 Spotify Camp Nou
 LOCATION:Spotify Camp Nou
 X-APPLE-CALENDAR-COLOR:#004D98
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Copenhague en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✈️ Elche vs Barcelona
+SUMMARY:✈️ Barcelona vs Elche
 DTSTART;TZID=Europe/Madrid:20260201T170000
 DTEND;TZID=Europe/Madrid:20260201T190000
-DTSTAMP:20251204T061509Z
-UID:barca_202602011700_8092@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202602011700_4139@github.com
 COLOR:#A50044
-DESCRIPTION:Partido: Elche vs Barcelona\nCompetición: LALIGA EA Sports 20
- 25/2026
-LOCATION:Fuera de casa
+DESCRIPTION:⚽ FC Barcelona vs Elche\n🏆 Competición: LALIGA EA Sports
+  2025/2026\n📍 Estadio del rival
+LOCATION:Estadio del rival
 X-APPLE-CALENDAR-COLOR:#A50044
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Elche en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Mallorca
 DTSTART;TZID=Europe/Madrid:20260208T170000
 DTEND;TZID=Europe/Madrid:20260208T190000
-DTSTAMP:20251204T061509Z
-UID:barca_202602081700_5683@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202602081700_5989@github.com
 COLOR:#004D98
-DESCRIPTION:Partido: Barcelona vs Mallorca\nCompetición: LALIGA EA Sports
-  2025/2026
+DESCRIPTION:⚽ FC Barcelona vs Mallorca\n🏆 Competición: LALIGA EA Spo
+ rts 2025/2026\n📍 Spotify Camp Nou
 LOCATION:Spotify Camp Nou
 X-APPLE-CALENDAR-COLOR:#004D98
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Mallorca en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✈️ Girona vs Barcelona
+SUMMARY:✈️ Barcelona vs Girona
 DTSTART;TZID=Europe/Madrid:20260215T170000
 DTEND;TZID=Europe/Madrid:20260215T190000
-DTSTAMP:20251204T061509Z
-UID:barca_202602151700_4340@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202602151700_6134@github.com
 COLOR:#A50044
-DESCRIPTION:Partido: Girona vs Barcelona\nCompetición: LALIGA EA Sports 2
- 025/2026
-LOCATION:Fuera de casa
+DESCRIPTION:⚽ FC Barcelona vs Girona\n🏆 Competición: LALIGA EA Sport
+ s 2025/2026\n📍 Estadio del rival
+LOCATION:Estadio del rival
 X-APPLE-CALENDAR-COLOR:#A50044
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Girona en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Levante
 DTSTART;TZID=Europe/Madrid:20260222T170000
 DTEND;TZID=Europe/Madrid:20260222T190000
-DTSTAMP:20251204T061509Z
-UID:barca_202602221700_9150@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202602221700_8225@github.com
 COLOR:#004D98
-DESCRIPTION:Partido: Barcelona vs Levante\nCompetición: LALIGA EA Sports 
- 2025/2026
+DESCRIPTION:⚽ FC Barcelona vs Levante\n🏆 Competición: LALIGA EA Spor
+ ts 2025/2026\n📍 Spotify Camp Nou
 LOCATION:Spotify Camp Nou
 X-APPLE-CALENDAR-COLOR:#004D98
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Levante en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Villarreal
 DTSTART;TZID=Europe/Madrid:20260301T170000
 DTEND;TZID=Europe/Madrid:20260301T190000
-DTSTAMP:20251204T061509Z
-UID:barca_202603011700_7811@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202603011700_3468@github.com
 COLOR:#004D98
-DESCRIPTION:Partido: Barcelona vs Villarreal\nCompetición: LALIGA EA Spor
- ts 2025/2026
+DESCRIPTION:⚽ FC Barcelona vs Villarreal\n🏆 Competición: LALIGA EA S
+ ports 2025/2026\n📍 Spotify Camp Nou
 LOCATION:Spotify Camp Nou
 X-APPLE-CALENDAR-COLOR:#004D98
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Villarreal en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✈️ Athletic vs Barcelona
+SUMMARY:✈️ Barcelona vs Athletic
 DTSTART;TZID=Europe/Madrid:20260308T170000
 DTEND;TZID=Europe/Madrid:20260308T190000
-DTSTAMP:20251204T061509Z
-UID:barca_202603081700_962@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202603081700_1676@github.com
 COLOR:#A50044
-DESCRIPTION:Partido: Athletic vs Barcelona\nCompetición: LALIGA EA Sports
-  2025/2026
-LOCATION:Fuera de casa
+DESCRIPTION:⚽ FC Barcelona vs Athletic\n🏆 Competición: LALIGA EA Spo
+ rts 2025/2026\n📍 Estadio del rival
+LOCATION:Estadio del rival
 X-APPLE-CALENDAR-COLOR:#A50044
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Athletic en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Sevilla
 DTSTART;TZID=Europe/Madrid:20260315T170000
 DTEND;TZID=Europe/Madrid:20260315T190000
-DTSTAMP:20251204T061509Z
-UID:barca_202603151700_376@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202603151700_9073@github.com
 COLOR:#004D98
-DESCRIPTION:Partido: Barcelona vs Sevilla\nCompetición: LALIGA EA Sports 
- 2025/2026
+DESCRIPTION:⚽ FC Barcelona vs Sevilla\n🏆 Competición: LALIGA EA Spor
+ ts 2025/2026\n📍 Spotify Camp Nou
 LOCATION:Spotify Camp Nou
 X-APPLE-CALENDAR-COLOR:#004D98
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Sevilla en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Rayo
 DTSTART;TZID=Europe/Madrid:20260322T170000
 DTEND;TZID=Europe/Madrid:20260322T190000
-DTSTAMP:20251204T061509Z
-UID:barca_202603221700_3045@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202603221700_8981@github.com
 COLOR:#004D98
-DESCRIPTION:Partido: Barcelona vs Rayo\nCompetición: LALIGA EA Sports 202
- 5/2026
+DESCRIPTION:⚽ FC Barcelona vs Rayo\n🏆 Competición: LALIGA EA Sports 
+ 2025/2026\n📍 Spotify Camp Nou
 LOCATION:Spotify Camp Nou
 X-APPLE-CALENDAR-COLOR:#004D98
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Rayo en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✈️ Atlético vs Barcelona
+SUMMARY:✈️ Barcelona vs Atlético
 DTSTART;TZID=Europe/Madrid:20260405T170000
 DTEND;TZID=Europe/Madrid:20260405T190000
-DTSTAMP:20251204T061509Z
-UID:barca_202604051700_3112@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202604051700_4629@github.com
 COLOR:#A50044
-DESCRIPTION:Partido: Atlético vs Barcelona\nCompetición: LALIGA EA Sport
- s 2025/2026
-LOCATION:Fuera de casa
+DESCRIPTION:⚽ FC Barcelona vs Atlético\n🏆 Competición: LALIGA EA Sp
+ orts 2025/2026\n📍 Estadio del rival
+LOCATION:Estadio del rival
 X-APPLE-CALENDAR-COLOR:#A50044
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Atlético en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Espanyol
 DTSTART;TZID=Europe/Madrid:20260412T170000
 DTEND;TZID=Europe/Madrid:20260412T190000
-DTSTAMP:20251204T061509Z
-UID:barca_202604121700_6078@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202604121700_323@github.com
 COLOR:#004D98
-DESCRIPTION:Partido: Barcelona vs Espanyol\nCompetición: LALIGA EA Sports
-  2025/2026
+DESCRIPTION:⚽ FC Barcelona vs Espanyol\n🏆 Competición: LALIGA EA Spo
+ rts 2025/2026\n📍 Spotify Camp Nou
 LOCATION:Spotify Camp Nou
 X-APPLE-CALENDAR-COLOR:#004D98
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Espanyol en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✈️ Getafe vs Barcelona
+SUMMARY:✈️ Barcelona vs Getafe
 DTSTART;TZID=Europe/Madrid:20260419T170000
 DTEND;TZID=Europe/Madrid:20260419T190000
-DTSTAMP:20251204T061509Z
-UID:barca_202604191700_111@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202604191700_9110@github.com
 COLOR:#A50044
-DESCRIPTION:Partido: Getafe vs Barcelona\nCompetición: LALIGA EA Sports 2
- 025/2026
-LOCATION:Fuera de casa
+DESCRIPTION:⚽ FC Barcelona vs Getafe\n🏆 Competición: LALIGA EA Sport
+ s 2025/2026\n📍 Estadio del rival
+LOCATION:Estadio del rival
 X-APPLE-CALENDAR-COLOR:#A50044
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Getafe en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Celta
 DTSTART;TZID=Europe/Madrid:20260422T210000
 DTEND;TZID=Europe/Madrid:20260422T230000
-DTSTAMP:20251204T061509Z
-UID:barca_202604222100_6002@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202604222100_6016@github.com
 COLOR:#004D98
-DESCRIPTION:Partido: Barcelona vs Celta\nCompetición: LALIGA EA Sports 20
- 25/2026
+DESCRIPTION:⚽ FC Barcelona vs Celta\n🏆 Competición: LALIGA EA Sports
+  2025/2026\n📍 Spotify Camp Nou
 LOCATION:Spotify Camp Nou
 X-APPLE-CALENDAR-COLOR:#004D98
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Celta en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✈️ Osasuna vs Barcelona
+SUMMARY:✈️ Barcelona vs Osasuna
 DTSTART;TZID=Europe/Madrid:20260503T170000
 DTEND;TZID=Europe/Madrid:20260503T190000
-DTSTAMP:20251204T061509Z
-UID:barca_202605031700_8059@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202605031700_7651@github.com
 COLOR:#A50044
-DESCRIPTION:Partido: Osasuna vs Barcelona\nCompetición: LALIGA EA Sports 
- 2025/2026
-LOCATION:Fuera de casa
+DESCRIPTION:⚽ FC Barcelona vs Osasuna\n🏆 Competición: LALIGA EA Spor
+ ts 2025/2026\n📍 Estadio del rival
+LOCATION:Estadio del rival
 X-APPLE-CALENDAR-COLOR:#A50044
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Osasuna en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Real Madrid
 DTSTART;TZID=Europe/Madrid:20260510T170000
 DTEND;TZID=Europe/Madrid:20260510T190000
-DTSTAMP:20251204T061509Z
-UID:barca_202605101700_9211@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202605101700_4265@github.com
 COLOR:#004D98
-DESCRIPTION:Partido: Barcelona vs Real Madrid\nCompetición: LALIGA EA Spo
- rts 2025/2026
+DESCRIPTION:⚽ FC Barcelona vs Real Madrid\n🏆 Competición: LALIGA EA 
+ Sports 2025/2026\n📍 Spotify Camp Nou
 LOCATION:Spotify Camp Nou
 X-APPLE-CALENDAR-COLOR:#004D98
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Real Madrid en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✈️ Alavés vs Barcelona
+SUMMARY:✈️ Barcelona vs Alavés
 DTSTART;TZID=Europe/Madrid:20260513T210000
 DTEND;TZID=Europe/Madrid:20260513T230000
-DTSTAMP:20251204T061509Z
-UID:barca_202605132100_5252@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202605132100_159@github.com
 COLOR:#A50044
-DESCRIPTION:Partido: Alavés vs Barcelona\nCompetición: LALIGA EA Sports 
- 2025/2026
-LOCATION:Fuera de casa
+DESCRIPTION:⚽ FC Barcelona vs Alavés\n🏆 Competición: LALIGA EA Spor
+ ts 2025/2026\n📍 Estadio del rival
+LOCATION:Estadio del rival
 X-APPLE-CALENDAR-COLOR:#A50044
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Alavés en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Betis
 DTSTART;TZID=Europe/Madrid:20260517T170000
 DTEND;TZID=Europe/Madrid:20260517T190000
-DTSTAMP:20251204T061509Z
-UID:barca_202605171700_4070@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202605171700_4228@github.com
 COLOR:#004D98
-DESCRIPTION:Partido: Barcelona vs Betis\nCompetición: LALIGA EA Sports 20
- 25/2026
+DESCRIPTION:⚽ FC Barcelona vs Betis\n🏆 Competición: LALIGA EA Sports
+  2025/2026\n📍 Spotify Camp Nou
 LOCATION:Spotify Camp Nou
 X-APPLE-CALENDAR-COLOR:#004D98
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Betis en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✈️ Valencia vs Barcelona
+SUMMARY:✈️ Barcelona vs Valencia
 DTSTART;TZID=Europe/Madrid:20260524T170000
 DTEND;TZID=Europe/Madrid:20260524T190000
-DTSTAMP:20251204T061509Z
-UID:barca_202605241700_1943@github.com
+DTSTAMP:20251205T061520Z
+UID:barca_202605241700_266@github.com
 COLOR:#A50044
-DESCRIPTION:Partido: Valencia vs Barcelona\nCompetición: LALIGA EA Sports
-  2025/2026
-LOCATION:Fuera de casa
+DESCRIPTION:⚽ FC Barcelona vs Valencia\n🏆 Competición: LALIGA EA Spo
+ rts 2025/2026\n📍 Estadio del rival
+LOCATION:Estadio del rival
 X-APPLE-CALENDAR-COLOR:#A50044
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:⏰ Recordatorio: Barcelona vs Valencia en 24 horas
+TRIGGER:-P1D
+END:VALARM
 END:VEVENT
 END:VCALENDAR
