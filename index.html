@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* --- ESTILO BUY ME A COFFEE --- */
+        /* --- ESTILO BUY ME A COFFEE BONITO --- */
         :root {
             --primary: #004D98;         /* Azul Barça */
             --secondary: #A50044;       /* Grana Barça */
@@ -40,7 +40,6 @@
                 radial-gradient(circle at 80% 20%, rgba(165, 0, 68, 0.03) 0%, transparent 50%);
         }
 
-        /* --- CONTENEDOR RESPONSIVE --- */
         .container {
             max-width: 1200px;
             width: 100%;
@@ -54,7 +53,7 @@
             position: relative;
         }
 
-        /* --- SELECTOR DE IDIOMA CON BANDERAS --- */
+        /* --- SELECTOR DE IDIOMA ELEGANTE --- */
         .language-selector {
             position: absolute;
             top: 20px;
@@ -94,27 +93,6 @@
             box-shadow: 0 0 0 3px rgba(0, 77, 152, 0.2);
         }
 
-        .language-btn::after {
-            content: attr(title);
-            position: absolute;
-            bottom: -25px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--primary);
-            color: white;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 0.7em;
-            white-space: nowrap;
-            opacity: 0;
-            transition: opacity 0.2s;
-            pointer-events: none;
-        }
-
-        .language-btn:hover::after {
-            opacity: 1;
-        }
-
         .catalan-flag {
             background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Flag_of_Catalonia.svg/2560px-Flag_of_Catalonia.svg.png');
         }
@@ -127,7 +105,7 @@
             background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/2560px-Flag_of_the_United_Kingdom_%283-5%29.svg.png');
         }
 
-        /* --- HEADER AL ESTILO BUY ME A COFFEE --- */
+        /* --- HEADER HERMOSO --- */
         .header {
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             color: white;
@@ -203,15 +181,15 @@
             padding: 35px 30px;
         }
 
-        /* --- BANNER DE CARACTERÍSTICAS --- */
+        /* --- BANNER DE CARACTERÍSTICAS COMPACTO --- */
         .features-banner {
             background: linear-gradient(135deg, #f8f5f0 0%, #f0ebe2 100%);
             border-radius: 12px;
             border: 1px solid var(--border);
+            padding: 20px;
+            margin-bottom: 30px;
             position: relative;
             overflow: hidden;
-            padding: 25px;
-            margin-bottom: 35px;
         }
 
         .features-banner::after {
@@ -219,8 +197,8 @@
             position: absolute;
             top: 0;
             right: 0;
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             border-radius: 0 0 0 100%;
             opacity: 0.1;
@@ -229,11 +207,11 @@
         .features-title {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
             color: var(--primary);
             font-weight: 600;
-            font-size: 1.1em;
-            margin-bottom: 20px;
+            font-size: 1em;
+            margin-bottom: 15px;
         }
 
         .features-title i {
@@ -243,66 +221,54 @@
         .features-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
+            gap: 12px;
         }
 
         .feature-item {
             text-align: center;
-            padding: 15px 10px;
+            padding: 12px 8px;
         }
 
         .feature-icon {
-            width: 44px;
-            height: 44px;
+            width: 40px;
+            height: 40px;
             background: white;
-            border-radius: 12px;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 auto 12px;
+            margin: 0 auto 10px;
             color: var(--secondary);
-            font-size: 1.2em;
+            font-size: 1.1em;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-            transition: var(--transition);
-        }
-
-        .feature-item:hover .feature-icon {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
         }
 
         .feature-item h3 {
-            font-size: 0.85em;
+            font-size: 0.8em;
             font-weight: 600;
             color: var(--primary);
-            margin-bottom: 5px;
+            margin-bottom: 4px;
         }
 
         .feature-item p {
-            font-size: 0.75em;
+            font-size: 0.7em;
             color: var(--text-light);
-            line-height: 1.4;
+            line-height: 1.3;
         }
 
         /* --- ENLACE DEL CALENDARIO --- */
         .url-section {
-            margin-bottom: 40px;
-        }
-
-        .section-header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 15px;
+            margin-bottom: 30px;
         }
 
         .section-title {
             color: var(--primary);
             font-weight: 600;
-            font-size: 1.1em;
+            font-size: 1em;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
+            margin-bottom: 12px;
         }
 
         .section-title i {
@@ -311,54 +277,43 @@
 
         .url-container {
             display: flex;
-            gap: 12px;
+            gap: 10px;
             align-items: stretch;
         }
 
         .url-box {
             flex: 1;
             background: #f8f9fa;
-            border-radius: 12px;
+            border-radius: 10px;
             border: 1px solid var(--border);
-            padding: 18px;
+            padding: 15px;
             font-family: 'SF Mono', Monaco, 'Courier New', monospace;
-            font-size: 0.85em;
+            font-size: 0.8em;
             color: var(--primary);
             word-break: break-all;
-            line-height: 1.4;
-            min-height: 56px;
+            line-height: 1.3;
+            min-height: 50px;
             display: flex;
             align-items: center;
-            background: linear-gradient(135deg, #f9f9f9 0%, #f0f0f0 100%);
-            transition: var(--transition);
         }
 
-        .url-box:hover {
-            border-color: var(--primary);
-            background: linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%);
-        }
-
-        /* --- BOTÓN DE COPIAR CON PADDING 10 --- */
         .copy-btn {
             background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
             color: white;
             border: none;
-            padding: 10px;
-            border-radius: 12px;
-            font-size: 0.9em;
+            padding: 10px 16px;
+            border-radius: 10px;
+            font-size: 0.85em;
             font-weight: 600;
             cursor: pointer;
             transition: var(--transition);
             white-space: nowrap;
             flex-shrink: 0;
-            height: auto;
             letter-spacing: 0.02em;
             box-shadow: 0 4px 12px rgba(0, 77, 152, 0.2);
-            min-width: 44px;
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 8px;
+            gap: 6px;
         }
 
         .copy-btn:hover {
@@ -370,15 +325,15 @@
             background: linear-gradient(135deg, #34A853 0%, #2E8B47 100%);
         }
 
-        /* --- PLATAFORMAS --- */
+        /* --- PLATAFORMAS CON ACORDEÓN --- */
         .instructions-title {
             color: var(--primary);
-            font-size: 1.3em;
+            font-size: 1.2em;
             font-weight: 700;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             text-align: center;
             position: relative;
-            padding-bottom: 15px;
+            padding-bottom: 12px;
         }
 
         .instructions-title::after {
@@ -387,31 +342,35 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 60px;
+            width: 50px;
             height: 3px;
             background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
             border-radius: 2px;
         }
 
         .platforms {
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         .platform {
             background: var(--card-bg);
-            border-radius: 14px;
+            border-radius: 12px;
             border: 1px solid var(--border);
+            margin-bottom: 10px;
             transition: var(--transition);
             position: relative;
             overflow: hidden;
-            padding: 25px;
-            margin-bottom: 20px;
+            cursor: pointer;
         }
 
         .platform:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
             border-color: var(--primary);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .platform.active {
+            border-color: var(--primary);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
         }
 
         .platform::before {
@@ -419,7 +378,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 6px;
+            width: 5px;
             height: 100%;
             background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
         }
@@ -427,22 +386,35 @@
         .platform-header {
             display: flex;
             align-items: center;
-            gap: 20px;
-            margin-bottom: 20px;
+            justify-content: space-between;
+            padding: 18px 20px;
+            transition: var(--transition);
+        }
+
+        .platform.active .platform-header {
+            border-bottom: 1px solid var(--border);
+            background: linear-gradient(135deg, rgba(0, 77, 152, 0.03) 0%, rgba(165, 0, 68, 0.02) 100%);
+        }
+
+        .platform-header-content {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex: 1;
         }
 
         .platform-icon {
-            width: 50px;
-            height: 50px;
-            border-radius: 14px;
+            width: 45px;
+            height: 45px;
+            border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: 700;
             color: white;
-            font-size: 1.2em;
+            font-size: 1.1em;
             flex-shrink: 0;
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
 
         .platform.google .platform-icon {
@@ -459,59 +431,67 @@
 
         .platform h3 {
             color: var(--primary);
-            font-size: 1.1em;
+            font-size: 1em;
             font-weight: 700;
-            flex: 1;
+            margin: 0;
+        }
+
+        .platform-arrow {
+            color: var(--text-light);
+            font-size: 0.9em;
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .platform.active .platform-arrow {
+            transform: rotate(180deg);
+            color: var(--secondary);
+        }
+
+        .platform-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            padding: 0 20px;
+        }
+
+        .platform.active .platform-content {
+            max-height: 500px;
+            padding: 20px;
         }
 
         .platform ol {
-            margin-left: 22px;
+            margin-left: 20px;
             color: var(--text);
-            font-size: 0.9em;
+            font-size: 0.85em;
         }
 
         .platform li {
-            margin-bottom: 10px;
-            padding-left: 8px;
-            position: relative;
-            line-height: 1.5;
+            margin-bottom: 8px;
+            padding-left: 5px;
+            line-height: 1.4;
         }
 
-        .platform li::marker {
+        .platform li strong {
             color: var(--secondary);
-            font-weight: 600;
         }
 
-        /* --- SINCRONIZACIÓN --- */
+        /* --- SINCRONIZACIÓN COMPACTA --- */
         .sync-section {
             background: linear-gradient(135deg, #f0f7ff 0%, #e8f4ff 100%);
-            border-radius: 16px;
-            padding: 25px;
-            border-left: 5px solid var(--secondary);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .sync-section::before {
-            content: '';
-            position: absolute;
-            top: -20px;
-            right: -20px;
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, var(--primary) 0%, transparent 70%);
-            opacity: 0.1;
-            border-radius: 50%;
+            border-radius: 14px;
+            padding: 20px;
+            border-left: 4px solid var(--secondary);
         }
 
         .sync-title {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
             color: var(--primary);
             font-weight: 700;
-            font-size: 1.1em;
-            margin-bottom: 15px;
+            font-size: 1em;
+            margin-bottom: 12px;
         }
 
         .sync-title i {
@@ -521,19 +501,19 @@
 
         .sync-section p {
             color: var(--text-light);
-            font-size: 0.9em;
-            margin-bottom: 20px;
-            line-height: 1.6;
+            font-size: 0.85em;
+            margin-bottom: 15px;
+            line-height: 1.5;
         }
 
         .status-indicator {
             display: inline-flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
             background: rgba(0, 77, 152, 0.1);
-            padding: 10px 18px;
-            border-radius: 24px;
-            font-size: 0.85em;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.8em;
             color: var(--primary);
             font-weight: 600;
             border: 1px solid rgba(0, 77, 152, 0.2);
@@ -553,13 +533,13 @@
             100% { opacity: 0.6; transform: scale(0.95); }
         }
 
-        /* --- FOOTER --- */
+        /* --- FOOTER ELEGANTE --- */
         .footer {
             text-align: center;
-            padding: 25px 0;
+            padding: 20px 0;
             color: var(--text-light);
-            font-size: 0.85em;
-            margin-top: 30px;
+            font-size: 0.8em;
+            margin-top: 25px;
             border-top: 1px solid var(--border);
         }
 
@@ -576,9 +556,8 @@
         }
 
         /* ============================================= */
-        /* MEDIA QUERIES PARA VERSIÓN WEB (MÁS GRANDE) */
+        /* VERSIÓN WEB (más grande y espaciada) */
         /* ============================================= */
-
         @media (min-width: 768px) {
             .main-wrapper {
                 max-width: 700px;
@@ -625,41 +604,44 @@
             }
 
             .features-banner {
-                padding: 30px;
-                margin-bottom: 45px;
+                padding: 25px;
+                margin-bottom: 40px;
             }
 
             .features-title {
-                font-size: 1.3em;
-                margin-bottom: 25px;
+                font-size: 1.1em;
+                margin-bottom: 20px;
             }
 
             .features-grid {
-                gap: 25px;
+                gap: 20px;
             }
 
             .feature-item {
-                padding: 20px 15px;
+                padding: 15px 10px;
             }
 
             .feature-icon {
-                width: 60px;
-                height: 60px;
-                font-size: 1.5em;
-                margin-bottom: 15px;
+                width: 50px;
+                height: 50px;
+                font-size: 1.2em;
+                margin-bottom: 12px;
             }
 
             .feature-item h3 {
-                font-size: 1em;
-                margin-bottom: 8px;
+                font-size: 0.9em;
             }
 
             .feature-item p {
-                font-size: 0.85em;
+                font-size: 0.8em;
+            }
+
+            .url-section {
+                margin-bottom: 40px;
             }
 
             .section-title {
-                font-size: 1.3em;
+                font-size: 1.1em;
             }
 
             .url-container {
@@ -667,88 +649,77 @@
             }
 
             .url-box {
-                padding: 20px;
-                font-size: 0.95em;
-                min-height: 64px;
+                padding: 18px;
+                font-size: 0.9em;
+                min-height: 56px;
             }
 
             .copy-btn {
-                padding: 10px 25px;
-                font-size: 1em;
+                padding: 12px 25px;
+                font-size: 0.95em;
             }
 
             .instructions-title {
-                font-size: 1.6em;
-                margin-bottom: 40px;
-                padding-bottom: 20px;
+                font-size: 1.5em;
+                margin-bottom: 30px;
+                padding-bottom: 15px;
             }
 
             .instructions-title::after {
-                width: 80px;
-                height: 4px;
+                width: 70px;
             }
 
             .platforms {
-                margin-bottom: 50px;
-            }
-
-            .platform {
-                padding: 30px;
-                margin-bottom: 25px;
+                margin-bottom: 40px;
             }
 
             .platform-header {
-                gap: 25px;
-                margin-bottom: 25px;
+                padding: 22px 25px;
             }
 
             .platform-icon {
-                width: 60px;
-                height: 60px;
-                font-size: 1.4em;
+                width: 55px;
+                height: 55px;
+                font-size: 1.2em;
             }
 
             .platform h3 {
-                font-size: 1.3em;
+                font-size: 1.1em;
             }
 
             .platform ol {
-                font-size: 1em;
-                margin-left: 28px;
+                font-size: 0.95em;
             }
 
-            .platform li {
-                margin-bottom: 12px;
-                line-height: 1.6;
+            .platform.active .platform-content {
+                padding: 25px;
             }
 
             .sync-section {
-                padding: 30px;
+                padding: 25px;
             }
 
             .sync-title {
-                font-size: 1.3em;
-                margin-bottom: 20px;
+                font-size: 1.1em;
             }
 
             .sync-section p {
-                font-size: 1em;
-                line-height: 1.7;
+                font-size: 0.95em;
             }
 
             .status-indicator {
-                padding: 12px 22px;
-                font-size: 0.95em;
+                padding: 10px 20px;
+                font-size: 0.9em;
             }
 
             .footer {
-                padding: 30px 0;
-                font-size: 0.95em;
+                padding: 25px 0;
+                font-size: 0.9em;
             }
         }
 
         /* ============================================= */
-        /* MEDIA QUERIES PARA VERSIÓN MÓVIL */
+        /* VERSIÓN MÓVIL COMPACTA */
         /* ============================================= */
         @media (max-width: 520px) {
             body {
@@ -787,7 +758,7 @@
 
             .features-grid {
                 grid-template-columns: 1fr;
-                gap: 12px;
+                gap: 10px;
             }
 
             .feature-item {
@@ -795,7 +766,7 @@
                 align-items: center;
                 gap: 15px;
                 text-align: left;
-                padding: 12px;
+                padding: 15px;
                 background: white;
                 border-radius: 10px;
                 border: 1px solid var(--border);
@@ -808,26 +779,35 @@
 
             .url-container {
                 flex-direction: column;
+                gap: 12px;
             }
 
             .copy-btn {
-                padding: 15px 10px;
+                padding: 12px;
                 width: 100%;
-                font-size: 0.95em;
-            }
-
-            .platform {
-                padding: 20px;
+                justify-content: center;
             }
 
             .platform-header {
-                gap: 15px;
+                padding: 16px;
+            }
+
+            .platform-header-content {
+                gap: 12px;
             }
 
             .platform-icon {
-                width: 44px;
-                height: 44px;
-                font-size: 1.1em;
+                width: 40px;
+                height: 40px;
+                font-size: 1em;
+            }
+
+            .platform-content {
+                padding: 0 16px;
+            }
+
+            .platform.active .platform-content {
+                padding: 16px;
             }
         }
 
@@ -849,15 +829,11 @@
             }
 
             .instructions-title {
-                font-size: 1.2em;
+                font-size: 1.1em;
             }
 
             .sync-section {
-                padding: 20px;
-            }
-
-            .copy-btn {
-                padding: 12px 10px;
+                padding: 18px;
             }
         }
     </style>
@@ -865,7 +841,7 @@
 <body>
     <div class="container">
         <div class="main-wrapper">
-            <!-- SELECTOR DE IDIOMA CON BANDERAS -->
+            <!-- SELECTOR DE IDIOMA ELEGANTE -->
             <div class="language-selector">
                 <div class="language-btn catalan-flag active" data-lang="ca" title="Català"></div>
                 <div class="language-btn spanish-flag" data-lang="es" title="Español"></div>
@@ -877,14 +853,14 @@
                     <div class="logo">FCB</div>
                 </div>
                 <h1 data-i18n="title">Calendari FC Barcelona</h1>
-                <p class="subtitle" data-i18n="subtitle">Subscriu-te als partits del Barça directament al teu calendari</p>
+                <p class="subtitle" data-i18n="subtitle">Subscriu-te als partits del Barça</p>
             </div>
 
             <div class="content">
                 <div class="features-banner">
                     <div class="features-title">
                         <i class="fas fa-star"></i>
-                        <span data-i18n="features_title">Per què utilitzar aquest calendari?</span>
+                        <span data-i18n="features_title">Per què aquest calendari?</span>
                     </div>
                     <div class="features-grid">
                         <div class="feature-item">
@@ -892,8 +868,8 @@
                                 <i class="fas fa-sync-alt"></i>
                             </div>
                             <div>
-                                <h3 data-i18n="feature1_title">Actualització Automàtica</h3>
-                                <p data-i18n="feature1_desc">Els partits s'actualitzen automàticament cada dia</p>
+                                <h3 data-i18n="feature1_title">Automàtic</h3>
+                                <p data-i18n="feature1_desc">Actualització diària</p>
                             </div>
                         </div>
                         <div class="feature-item">
@@ -901,8 +877,8 @@
                                 <i class="fas fa-calendar-alt"></i>
                             </div>
                             <div>
-                                <h3 data-i18n="feature2_title">Format Universal</h3>
-                                <p data-i18n="feature2_desc">Compatible amb Google, Apple i Outlook Calendar</p>
+                                <h3 data-i18n="feature2_title">Universal</h3>
+                                <p data-i18n="feature2_desc">Totes les plataformes</p>
                             </div>
                         </div>
                         <div class="feature-item">
@@ -910,80 +886,95 @@
                                 <i class="fas fa-check-circle"></i>
                             </div>
                             <div>
-                                <h3 data-i18n="feature3_title">Completament Gratuït</h3>
-                                <p data-i18n="feature3_desc">Sense registre ni subscripció de pagament</p>
+                                <h3 data-i18n="feature3_title">Gratuït</h3>
+                                <p data-i18n="feature3_desc">Sense registre</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="url-section">
-                    <div class="section-header">
-                        <div class="section-title">
-                            <i class="fas fa-link"></i>
-                            <span data-i18n="url_label">Enllaç del calendari</span>
-                        </div>
-                        <div class="file-type">.ICS</div>
+                    <div class="section-title">
+                        <i class="fas fa-link"></i>
+                        <span data-i18n="url_label">Enllaç del calendari</span>
                     </div>
                     <div class="url-container">
                         <div class="url-box">
                             https://elemen84.github.io/FC-Barcelona-calendar/barcelona.ics
                         </div>
                         <button class="copy-btn" onclick="copyToClipboard()">
-                            <i class="fas fa-copy"></i> <span data-i18n="copy_button">Copiar enllaç</span>
+                            <i class="fas fa-copy"></i> <span data-i18n="copy_button">Copiar</span>
                         </button>
                     </div>
                 </div>
 
                 <h2 class="instructions-title">
                     <i class="fas fa-mobile-alt"></i>
-                    <span data-i18n="instructions_title">Instruccions per plataforma</span>
+                    <span data-i18n="instructions_title">Instruccions</span>
                 </h2>
 
                 <div class="platforms">
-                    <div class="platform google">
+                    <!-- Google Calendar (acordeón) -->
+                    <div class="platform google" onclick="togglePlatform(this)">
                         <div class="platform-header">
-                            <div class="platform-icon">G</div>
-                            <h3 data-i18n="google_title">Google Calendar</h3>
+                            <div class="platform-header-content">
+                                <div class="platform-icon">G</div>
+                                <h3 data-i18n="google_title">Google Calendar</h3>
+                            </div>
+                            <i class="fas fa-chevron-down platform-arrow"></i>
                         </div>
-                        <ol>
-                            <li data-i18n="google_step1">Obre al teu ordinador o navegador del mòbil: <strong>https://calendar.google.com/</strong></li>
-                            <li data-i18n="google_step2">A la dreta, a sota de "Altres calendaris", fes clic a "+"</li>
-                            <li data-i18n="google_step3">Selecciona "A partir de l'URL"</li>
-                            <li data-i18n="google_step4">Pega l'enllaç i fes clic a "Afegir calendari"</li>
-                            <li data-i18n="google_step5">Obre l'app de Google Calendar al teu mòbil</li>
-                            <li data-i18n="google_step6">Ves a configuració del calendari "FC Barcelona" i clica a sincronitzar</li>
-                        </ol>
+                        <div class="platform-content">
+                            <ol>
+                                <li data-i18n="google_step1">Obre <strong>calendar.google.com</strong></li>
+                                <li data-i18n="google_step2">A "Altres calendaris", fes clic a "+"</li>
+                                <li data-i18n="google_step3">Selecciona "A partir de l'URL"</li>
+                                <li data-i18n="google_step4">Pega l'enllaç i "Afegir calendari"</li>
+                                <li data-i18n="google_step5">Obre l'app al mòbil</li>
+                                <li data-i18n="google_step6">Configura i sincronitza</li>
+                            </ol>
+                        </div>
                     </div>
 
-                    <div class="platform apple">
+                    <!-- Apple Calendar (acordeón) -->
+                    <div class="platform apple" onclick="togglePlatform(this)">
                         <div class="platform-header">
-                            <div class="platform-icon">A</div>
-                            <h3 data-i18n="apple_title">Apple Calendar</h3>
+                            <div class="platform-header-content">
+                                <div class="platform-icon">A</div>
+                                <h3 data-i18n="apple_title">Apple Calendar</h3>
+                            </div>
+                            <i class="fas fa-chevron-down platform-arrow"></i>
                         </div>
-                        <ol>
-                            <li data-i18n="apple_step1">Obre l'aplicació Calendar al teu Mac o iPhone</li>
-                            <li data-i18n="apple_step2">Fes clic a "Arxiu" → "Nova subscripció"</li>
-                            <li data-i18n="apple_step3">Pega l'enllaç del calendari</li>
-                            <li data-i18n="apple_step4">Configura les opcions i fes clic a "Subscriure's"</li>
-                            <li data-i18n="apple_step5">A l'app, ves a Calendaris → "FC Barcelona"</li>
-                            <li data-i18n="apple_step6">Configura el calendari i activa la sincronització</li>
-                        </ol>
+                        <div class="platform-content">
+                            <ol>
+                                <li data-i18n="apple_step1">Obre l'app Calendar</li>
+                                <li data-i18n="apple_step2">"Arxiu" → "Nova subscripció"</li>
+                                <li data-i18n="apple_step3">Pega l'enllaç</li>
+                                <li data-i18n="apple_step4">Configura i "Subscriure's"</li>
+                                <li data-i18n="apple_step5">Ves a Calendaris → "FC Barcelona"</li>
+                                <li data-i18n="apple_step6">Activa la sincronització</li>
+                            </ol>
+                        </div>
                     </div>
 
-                    <div class="platform outlook">
+                    <!-- Outlook (acordeón) -->
+                    <div class="platform outlook" onclick="togglePlatform(this)">
                         <div class="platform-header">
-                            <div class="platform-icon">O</div>
-                            <h3 data-i18n="outlook_title">Microsoft Outlook</h3>
+                            <div class="platform-header-content">
+                                <div class="platform-icon">O</div>
+                                <h3 data-i18n="outlook_title">Microsoft Outlook</h3>
+                            </div>
+                            <i class="fas fa-chevron-down platform-arrow"></i>
                         </div>
-                        <ol>
-                            <li data-i18n="outlook_step1">Entra a <strong>https://outlook.live.com</strong> al teu ordinador o mòbil</li>
-                            <li data-i18n="outlook_step2">Ves a la secció Calendari</li>
-                            <li data-i18n="outlook_step3">A l'esquerra, clica a "Afegir calendari"</li>
-                            <li data-i18n="outlook_step4">Selecciona "Subscriure's des de web"</li>
-                            <li data-i18n="outlook_step5">Pega l'enllaç del calendari i guarda</li>
-                            <li data-i18n="outlook_step6">Obre l'app Outlook al mòbil per veure el calendari</li>
-                        </ol>
+                        <div class="platform-content">
+                            <ol>
+                                <li data-i18n="outlook_step1">Entra a <strong>outlook.live.com</strong></li>
+                                <li data-i18n="outlook_step2">Ves a Calendari</li>
+                                <li data-i18n="outlook_step3">A l'esquerra, clica "Afegir calendari"</li>
+                                <li data-i18n="outlook_step4">"Subscriure's des de web"</li>
+                                <li data-i18n="outlook_step5">Pega l'enllaç i guarda</li>
+                                <li data-i18n="outlook_step6">Obre l'app al mòbil</li>
+                            </ol>
+                        </div>
                     </div>
                 </div>
 
@@ -993,20 +984,18 @@
                         <span data-i18n="sync_title">Informació de Sincronització</span>
                     </div>
                     <p data-i18n="sync_desc">
-                        El calendari s'actualitza automàticament cada dia amb els horaris oficials dels partits.
-                        Els canvis es veuran a la teva aplicació en un màxim de 24 hores des de la publicació.
-                        Recorda configurar la sincronització a la teva app de calendari per obtenir les actualitzacions.
+                        El calendari s'actualitza automàticament cada dia amb els horaris oficials.
+                        Els canvis es veuran a la teva app en un màxim de 24 hores.
                     </p>
                     <div class="status-indicator">
                         <span class="status-dot"></span>
-                        <span data-i18n="status_text">Estat: Calendari actiu i sincronitzant</span>
+                        <span data-i18n="status_text">Calendari actiu i sincronitzant</span>
                     </div>
                 </div>
 
                 <div class="footer">
                     <p data-i18n="footer_text">
-                        Calendari no oficial del FC Barcelona.
-                        Els horaris poden estar subjectes a canvis per part de LaLiga.
+                        Calendari no oficial del FC Barcelona
                     </p>
                     <p style="margin-top: 10px;">
                         <a href="https://github.com/elemen84/FC-Barcelona-calendar" target="_blank">
@@ -1019,197 +1008,192 @@
     </div>
 
     <script>
-        // DICCIONARIOS DE TRADUCCIÓN
+        // DICCIONARIOS DE TRADUCCIÓN ELEGANTES
         const translations = {
             ca: {
                 title: "Calendari FC Barcelona",
-                subtitle: "Subscriu-te als partits del Barça directament al teu calendari",
-                features_title: "Per què utilitzar aquest calendari?",
-                feature1_title: "Actualització Automàtica",
-                feature1_desc: "Els partits s'actualitzen automàticament cada dia",
-                feature2_title: "Format Universal",
-                feature2_desc: "Compatible amb Google, Apple i Outlook Calendar",
-                feature3_title: "Completament Gratuït",
-                feature3_desc: "Sense registre ni subscripció de pagament",
+                subtitle: "Subscriu-te als partits del Barça",
+                features_title: "Per què aquest calendari?",
+                feature1_title: "Automàtic",
+                feature1_desc: "Actualització diària",
+                feature2_title: "Universal",
+                feature2_desc: "Totes les plataformes",
+                feature3_title: "Gratuït",
+                feature3_desc: "Sense registre",
                 url_label: "Enllaç del calendari",
-                copy_button: "Copiar enllaç",
+                copy_button: "Copiar",
                 copied_message: "Copiat!",
-                instructions_title: "Instruccions per plataforma",
+                instructions_title: "Instruccions",
                 google_title: "Google Calendar",
-                google_step1: "Obre al teu ordinador o navegador del mòbil: https://calendar.google.com/",
-                google_step2: 'A la dreta, a sota de "Altres calendaris", fes clic a "+"',
+                google_step1: "Obre calendar.google.com",
+                google_step2: 'A "Altres calendaris", fes clic a "+"',
                 google_step3: 'Selecciona "A partir de l\'URL"',
-                google_step4: 'Pega l\'enllaç i fes clic a "Afegir calendari"',
-                google_step5: "Obre l'app de Google Calendar al teu mòbil",
-                google_step6: 'Ves a configuració del calendari "FC Barcelona" i clica a sincronitzar',
+                google_step4: 'Pega l\'enllaç i "Afegir calendari"',
+                google_step5: "Obre l'app al mòbil",
+                google_step6: "Configura i sincronitza",
                 apple_title: "Apple Calendar",
-                apple_step1: "Obre l'aplicació Calendar al teu Mac o iPhone",
-                apple_step2: 'Fes clic a "Arxiu" → "Nova subscripció"',
-                apple_step3: "Pega l'enllaç del calendari",
-                apple_step4: 'Configura les opcions i fes clic a "Subscriure\'s"',
-                apple_step5: 'A l\'app, ves a Calendaris → "FC Barcelona"',
-                apple_step6: "Configura el calendari i activa la sincronització",
+                apple_step1: "Obre l'app Calendar",
+                apple_step2: '"Arxiu" → "Nova subscripció"',
+                apple_step3: "Pega l'enllaç",
+                apple_step4: 'Configura i "Subscriure\'s"',
+                apple_step5: 'Ves a Calendaris → "FC Barcelona"',
+                apple_step6: "Activa la sincronització",
                 outlook_title: "Microsoft Outlook",
-                outlook_step1: "Entra a https://outlook.live.com al teu ordinador o mòbil",
-                outlook_step2: "Ves a la secció Calendari",
-                outlook_step3: 'A l\'esquerra, clica a "Afegir calendari"',
-                outlook_step4: 'Selecciona "Subscriure\'s des de web"',
-                outlook_step5: "Pega l'enllaç del calendari i guarda",
-                outlook_step6: "Obre l'app Outlook al mòbil per veure el calendari",
+                outlook_step1: "Entra a outlook.live.com",
+                outlook_step2: "Ves a Calendari",
+                outlook_step3: 'A l\'esquerra, clica "Afegir calendari"',
+                outlook_step4: '"Subscriure\'s des de web"',
+                outlook_step5: "Pega l'enllaç i guarda",
+                outlook_step6: "Obre l'app al mòbil",
                 sync_title: "Informació de Sincronització",
-                sync_desc: "El calendari s'actualitza automàticament cada dia amb els horaris oficials dels partits. Els canvis es veuran a la teva aplicació en un màxim de 24 hores des de la publicació. Recorda configurar la sincronització a la teva app de calendari per obtenir les actualitzacions.",
-                status_text: "Estat: Calendari actiu i sincronitzant",
-                footer_text: "Calendari no oficial del FC Barcelona. Els horaris poden estar subjectes a canvis per part de LaLiga.",
+                sync_desc: "El calendari s'actualitza automàticament cada dia amb els horaris oficials. Els canvis es veuran a la teva app en un màxim de 24 hores.",
+                status_text: "Calendari actiu i sincronitzant",
+                footer_text: "Calendari no oficial del FC Barcelona",
                 github_link: "Codi font al GitHub"
             },
             es: {
                 title: "Calendario FC Barcelona",
-                subtitle: "Suscríbete a los partidos del Barça directamente en tu calendario",
-                features_title: "¿Por qué usar este calendario?",
-                feature1_title: "Actualización Automática",
-                feature1_desc: "Los partidos se actualizan automáticamente cada día",
-                feature2_title: "Formato Universal",
-                feature2_desc: "Compatible con Google, Apple y Outlook Calendar",
-                feature3_title: "Completamente Gratuito",
-                feature3_desc: "Sin registro ni suscripción de pago",
+                subtitle: "Suscríbete a los partidos del Barça",
+                features_title: "¿Por qué este calendario?",
+                feature1_title: "Automático",
+                feature1_desc: "Actualización diaria",
+                feature2_title: "Universal",
+                feature2_desc: "Todas las plataformas",
+                feature3_title: "Gratuito",
+                feature3_desc: "Sin registro",
                 url_label: "Enlace del calendario",
-                copy_button: "Copiar enlace",
+                copy_button: "Copiar",
                 copied_message: "¡Copiado!",
-                instructions_title: "Instrucciones por plataforma",
+                instructions_title: "Instrucciones",
                 google_title: "Google Calendar",
-                google_step1: "Abre en tu ordenador o navegador del móvil: https://calendar.google.com/",
-                google_step2: 'A la derecha, debajo de "Otros calendarios", haz clic en "+"',
+                google_step1: "Abre calendar.google.com",
+                google_step2: 'En "Otros calendarios", haz clic en "+"',
                 google_step3: 'Selecciona "Desde URL"',
-                google_step4: 'Pega el enlace y haz clic en "Añadir calendario"',
-                google_step5: "Abre la app de Google Calendar en tu móvil",
-                google_step6: 'Ve a configuración del calendario "FC Barcelona" y haz clic en sincronizar',
+                google_step4: 'Pega el enlace y "Añadir calendario"',
+                google_step5: "Abre la app en el móvil",
+                google_step6: "Configura y sincroniza",
                 apple_title: "Apple Calendar",
-                apple_step1: "Abre la aplicación Calendario en tu Mac o iPhone",
-                apple_step2: 'Haz clic en "Archivo" → "Nueva suscripción"',
-                apple_step3: "Pega el enlace del calendario",
-                apple_step4: 'Configura las opciones y haz clic en "Suscribirse"',
-                apple_step5: 'En la app, ve a Calendarios → "FC Barcelona"',
-                apple_step6: "Configura el calendario y activa la sincronización",
+                apple_step1: "Abre la app Calendario",
+                apple_step2: '"Archivo" → "Nueva suscripción"',
+                apple_step3: "Pega el enlace",
+                apple_step4: 'Configura y "Suscribirse"',
+                apple_step5: 'Ve a Calendarios → "FC Barcelona"',
+                apple_step6: "Activa la sincronización",
                 outlook_title: "Microsoft Outlook",
-                outlook_step1: "Entra en https://outlook.live.com en tu ordenador o móvil",
-                outlook_step2: "Ve a la sección Calendario",
+                outlook_step1: "Entra en outlook.live.com",
+                outlook_step2: "Ve a Calendario",
                 outlook_step3: 'A la izquierda, haz clic en "Añadir calendario"',
-                outlook_step4: 'Selecciona "Suscribirse desde web"',
-                outlook_step5: "Pega el enlace del calendario y guarda",
-                outlook_step6: "Abre la app Outlook en el móvil para ver el calendario",
+                outlook_step4: '"Suscribirse desde web"',
+                outlook_step5: "Pega el enlace y guarda",
+                outlook_step6: "Abre la app en el móvil",
                 sync_title: "Información de Sincronización",
-                sync_desc: "El calendario se actualiza automáticamente cada día con los horarios oficiales de los partidos. Los cambios se verán en tu aplicación en un máximo de 24 horas desde la publicación. Recuerda configurar la sincronización en tu app de calendario para obtener las actualizaciones.",
-                status_text: "Estado: Calendario activo y sincronizando",
-                footer_text: "Calendario no oficial del FC Barcelona. Los horarios pueden estar sujetos a cambios por parte de LaLiga.",
+                sync_desc: "El calendario se actualiza automáticamente cada día con los horarios oficiales. Los cambios se verán en tu app en un máximo de 24 horas.",
+                status_text: "Calendario activo y sincronizando",
+                footer_text: "Calendario no oficial del FC Barcelona",
                 github_link: "Código fuente en GitHub"
             },
             en: {
                 title: "FC Barcelona Calendar",
-                subtitle: "Subscribe to Barça matches directly in your calendar",
-                features_title: "Why use this calendar?",
-                feature1_title: "Automatic Updates",
-                feature1_desc: "Matches are automatically updated every day",
-                feature2_title: "Universal Format",
-                feature2_desc: "Compatible with Google, Apple and Outlook Calendar",
-                feature3_title: "Completely Free",
-                feature3_desc: "No registration or paid subscription required",
+                subtitle: "Subscribe to Barça matches",
+                features_title: "Why this calendar?",
+                feature1_title: "Automatic",
+                feature1_desc: "Daily updates",
+                feature2_title: "Universal",
+                feature2_desc: "All platforms",
+                feature3_title: "Free",
+                feature3_desc: "No registration",
                 url_label: "Calendar link",
-                copy_button: "Copy link",
+                copy_button: "Copy",
                 copied_message: "Copied!",
-                instructions_title: "Instructions by platform",
+                instructions_title: "Instructions",
                 google_title: "Google Calendar",
-                google_step1: "Open on your computer or mobile browser: https://calendar.google.com/",
-                google_step2: 'On the right, under "Other calendars", click "+"',
+                google_step1: "Open calendar.google.com",
+                google_step2: 'Under "Other calendars", click "+"',
                 google_step3: 'Select "From URL"',
-                google_step4: 'Paste the link and click "Add calendar"',
-                google_step5: "Open the Google Calendar app on your mobile",
-                google_step6: 'Go to "FC Barcelona" calendar settings and click synchronize',
+                google_step4: 'Paste link and "Add calendar"',
+                google_step5: "Open app on mobile",
+                google_step6: "Configure and sync",
                 apple_title: "Apple Calendar",
-                apple_step1: "Open the Calendar app on your Mac or iPhone",
-                apple_step2: 'Click "File" → "New Calendar Subscription"',
-                apple_step3: "Paste the calendar link",
-                apple_step4: 'Configure options and click "Subscribe"',
-                apple_step5: 'In the app, go to Calendars → "FC Barcelona"',
-                apple_step6: "Configure the calendar and activate synchronization",
+                apple_step1: "Open Calendar app",
+                apple_step2: '"File" → "New Subscription"',
+                apple_step3: "Paste link",
+                apple_step4: 'Configure and "Subscribe"',
+                apple_step5: 'Go to Calendars → "FC Barcelona"',
+                apple_step6: "Activate synchronization",
                 outlook_title: "Microsoft Outlook",
-                outlook_step1: "Go to https://outlook.live.com on your computer or mobile",
-                outlook_step2: "Go to the Calendar section",
+                outlook_step1: "Go to outlook.live.com",
+                outlook_step2: "Go to Calendar",
                 outlook_step3: 'On the left, click "Add calendar"',
-                outlook_step4: 'Select "Subscribe from web"',
-                outlook_step5: "Paste the calendar link and save",
-                outlook_step6: "Open the Outlook app on mobile to see the calendar",
+                outlook_step4: '"Subscribe from web"',
+                outlook_step5: "Paste link and save",
+                outlook_step6: "Open app on mobile",
                 sync_title: "Sync Information",
-                sync_desc: "The calendar updates automatically every day with the official match schedules. Changes will appear in your app within 24 hours of publication. Remember to configure synchronization in your calendar app to get updates.",
-                status_text: "Status: Calendar active and syncing",
-                footer_text: "Unofficial FC Barcelona calendar. Schedules may be subject to changes by LaLiga.",
+                sync_desc: "The calendar updates automatically every day with official schedules. Changes will appear in your app within 24 hours.",
+                status_text: "Calendar active and syncing",
+                footer_text: "Unofficial FC Barcelona calendar",
                 github_link: "Source code on GitHub"
             }
         };
 
-        // DETECTAR IDIOMA DEL NAVEGADOR
+        // FUNCIONES DE IDIOMA
         function getBrowserLanguage() {
             const lang = navigator.language || navigator.userLanguage;
             if (lang.startsWith('ca')) return 'ca';
             if (lang.startsWith('es')) return 'es';
             if (lang.startsWith('en')) return 'en';
-            return 'ca'; // Por defecto catalán
+            return 'ca';
         }
 
-        // CARGAR IDIOMA GUARDADO O DETECTAR
         function loadLanguage() {
             const savedLang = localStorage.getItem('fcb_calendar_lang');
             const lang = savedLang || getBrowserLanguage();
             changeLanguage(lang);
         }
 
-        // CAMBIAR IDIOMA
         function changeLanguage(lang) {
-            // Actualizar todos los elementos con data-i18n
             document.querySelectorAll('[data-i18n]').forEach(element => {
                 const key = element.getAttribute('data-i18n');
                 if (translations[lang] && translations[lang][key]) {
-                    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
-                        element.value = translations[lang][key];
-                    } else {
-                        element.textContent = translations[lang][key];
-                    }
+                    element.textContent = translations[lang][key];
                 }
             });
 
-            // Actualizar atributo lang del html
             document.documentElement.setAttribute('lang', lang);
 
-            // Actualizar banderas activas
             document.querySelectorAll('.language-btn').forEach(btn => {
-                if (btn.getAttribute('data-lang') === lang) {
-                    btn.classList.add('active');
-                } else {
-                    btn.classList.remove('active');
-                }
+                btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
             });
 
-            // Guardar preferencia
             localStorage.setItem('fcb_calendar_lang', lang);
         }
 
-        // INICIALIZAR EVENTOS DE BANDERAS
-        document.querySelectorAll('.language-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                const lang = this.getAttribute('data-lang');
-                changeLanguage(lang);
-            });
-        });
+        // ACORDEÓN DE PLATAFORMAS
+        let activePlatform = null;
 
-        // COPIAR AL PORTAPAPELES
+        function togglePlatform(platform) {
+            // Si ya está activa, la cerramos
+            if (platform.classList.contains('active')) {
+                platform.classList.remove('active');
+                activePlatform = null;
+            } else {
+                // Cerramos la plataforma activa si hay una
+                if (activePlatform) {
+                    activePlatform.classList.remove('active');
+                }
+                // Abrimos la nueva plataforma
+                platform.classList.add('active');
+                activePlatform = platform;
+            }
+        }
+
+        // COPIAR ENLACE
         function copyToClipboard() {
             const url = 'https://elemen84.github.io/FC-Barcelona-calendar/barcelona.ics';
             const btn = document.querySelector('.copy-btn');
-            const originalHTML = btn.innerHTML;
+            const copyText = btn.querySelector('span');
             const currentLang = document.documentElement.getAttribute('lang') || 'ca';
 
             navigator.clipboard.writeText(url).then(() => {
-                // Mostrar mensaje de éxito
-                const copyText = btn.querySelector('span[data-i18n="copy_button"]');
                 const originalText = copyText.textContent;
                 copyText.textContent = translations[currentLang].copied_message;
                 btn.classList.add('copied');
@@ -1219,7 +1203,6 @@
                     btn.classList.remove('copied');
                 }, 2000);
             }).catch(err => {
-                // Fallback para navegadores antiguos
                 const textArea = document.createElement('textarea');
                 textArea.value = url;
                 document.body.appendChild(textArea);
@@ -1227,8 +1210,6 @@
                 document.execCommand('copy');
                 document.body.removeChild(textArea);
 
-                // Mostrar mensaje de éxito
-                const copyText = btn.querySelector('span[data-i18n="copy_button"]');
                 const originalText = copyText.textContent;
                 copyText.textContent = translations[currentLang].copied_message;
                 btn.classList.add('copied');
@@ -1240,21 +1221,36 @@
             });
         }
 
-        // INICIALIZAR AL CARGAR LA PÁGINA
+        // INICIALIZAR
         document.addEventListener('DOMContentLoaded', function() {
             loadLanguage();
 
-            // Efecto de animación en las tarjetas
+            document.querySelectorAll('.language-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const lang = this.getAttribute('data-lang');
+                    changeLanguage(lang);
+                });
+            });
+
+            // Abrir la primera plataforma por defecto en web
+            if (window.innerWidth >= 768) {
+                const firstPlatform = document.querySelector('.platform');
+                if (firstPlatform) {
+                    togglePlatform(firstPlatform);
+                }
+            }
+
+            // Animación suave para las tarjetas
             const platforms = document.querySelectorAll('.platform');
             platforms.forEach((platform, index) => {
                 platform.style.opacity = '0';
-                platform.style.transform = 'translateY(20px)';
+                platform.style.transform = 'translateY(15px)';
 
                 setTimeout(() => {
-                    platform.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                    platform.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
                     platform.style.opacity = '1';
                     platform.style.transform = 'translateY(0)';
-                }, 100 + (index * 150));
+                }, 100 + (index * 100));
             });
         });
     </script>
