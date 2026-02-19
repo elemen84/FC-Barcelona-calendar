@@ -12,8 +12,8 @@ BEGIN:VEVENT
 SUMMARY:✈️ Barcelona vs Mallorca
 DTSTART;TZID=Europe/Madrid:20260816T193000
 DTEND;TZID=Europe/Madrid:20260816T214500
-DTSTAMP:20260218T064510Z
-UID:barca_202608161930_996@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202608161930_5412@github.com
 COLOR:#A50044
 DESCRIPTION:⚽ Resultado: Mallorca0 - 3Barcelona\n🏆 Competición: LALI
  GA EA Sports 2025/2026\n📍 Estadio del rival
@@ -29,8 +29,8 @@ BEGIN:VEVENT
 SUMMARY:✈️ Barcelona vs Levante
 DTSTART;TZID=Europe/Madrid:20260823T213000
 DTEND;TZID=Europe/Madrid:20260823T234500
-DTSTAMP:20260218T064510Z
-UID:barca_202608232130_6390@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202608232130_2342@github.com
 COLOR:#A50044
 DESCRIPTION:⚽ Resultado: Levante2 - 3Barcelona\n🏆 Competición: LALIG
  A EA Sports 2025/2026\n📍 Estadio del rival
@@ -46,8 +46,8 @@ BEGIN:VEVENT
 SUMMARY:✈️ Barcelona vs Rayo
 DTSTART;TZID=Europe/Madrid:20260831T213000
 DTEND;TZID=Europe/Madrid:20260831T234500
-DTSTAMP:20260218T064510Z
-UID:barca_202608312130_9828@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202608312130_9234@github.com
 COLOR:#A50044
 DESCRIPTION:⚽ Resultado: Rayo1 - 1Barcelona\n🏆 Competición: LALIGA E
  A Sports 2025/2026\n📍 Estadio del rival
@@ -63,8 +63,8 @@ BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Valencia
 DTSTART;TZID=Europe/Madrid:20260914T210000
 DTEND;TZID=Europe/Madrid:20260914T231500
-DTSTAMP:20260218T064510Z
-UID:barca_202609142100_4057@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202609142100_7685@github.com
 COLOR:#004D98
 DESCRIPTION:⚽ Resultado: Barcelona6 - 0Valencia\n🏆 Competición: LALI
  GA EA Sports 2025/2026\n📍 Spotify Camp Nou
@@ -80,8 +80,8 @@ BEGIN:VEVENT
 SUMMARY:✈️ Barcelona vs Newcastle
 DTSTART;TZID=Europe/Madrid:20260918T210000
 DTEND;TZID=Europe/Madrid:20260918T231500
-DTSTAMP:20260218T064510Z
-UID:barca_202609182100_4536@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202609182100_8647@github.com
 COLOR:#A50044
 DESCRIPTION:⚽ Resultado: Newcastle1 - 2Barcelona\n🏆 Competición: Cha
  mpions League 2025/2026\n📍 Estadio del rival
@@ -97,8 +97,8 @@ BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Getafe
 DTSTART;TZID=Europe/Madrid:20260921T210000
 DTEND;TZID=Europe/Madrid:20260921T231500
-DTSTAMP:20260218T064510Z
-UID:barca_202609212100_7@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202609212100_3581@github.com
 COLOR:#004D98
 DESCRIPTION:⚽ Resultado: Barcelona3 - 0Getafe\n🏆 Competición: LALIGA
   EA Sports 2025/2026\n📍 Spotify Camp Nou
@@ -114,8 +114,8 @@ BEGIN:VEVENT
 SUMMARY:✈️ Barcelona vs Oviedo
 DTSTART;TZID=Europe/Madrid:20260925T213000
 DTEND;TZID=Europe/Madrid:20260925T234500
-DTSTAMP:20260218T064510Z
-UID:barca_202609252130_9991@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202609252130_6095@github.com
 COLOR:#A50044
 DESCRIPTION:⚽ Resultado: Oviedo1 - 3Barcelona\n🏆 Competición: LALIGA
   EA Sports 2025/2026\n📍 Estadio del rival
@@ -131,8 +131,8 @@ BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs R. Sociedad
 DTSTART;TZID=Europe/Madrid:20260928T183000
 DTEND;TZID=Europe/Madrid:20260928T204500
-DTSTAMP:20260218T064510Z
-UID:barca_202609281830_3618@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202609281830_6018@github.com
 COLOR:#004D98
 DESCRIPTION:⚽ Resultado: Barcelona2 - 1R. Sociedad\n🏆 Competición: L
  ALIGA EA Sports 2025/2026\n📍 Spotify Camp Nou
@@ -148,8 +148,8 @@ BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs PSG
 DTSTART;TZID=Europe/Madrid:20261001T210000
 DTEND;TZID=Europe/Madrid:20261001T231500
-DTSTAMP:20260218T064510Z
-UID:barca_202610012100_2483@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202610012100_2295@github.com
 COLOR:#004D98
 DESCRIPTION:⚽ Resultado: Barcelona1 - 2PSG\n🏆 Competición: Champions
   League 2025/2026\n📍 Spotify Camp Nou
@@ -165,8 +165,8 @@ BEGIN:VEVENT
 SUMMARY:✈️ Barcelona vs Sevilla
 DTSTART;TZID=Europe/Madrid:20261005T161500
 DTEND;TZID=Europe/Madrid:20261005T183000
-DTSTAMP:20260218T064510Z
-UID:barca_202610051615_7102@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202610051615_532@github.com
 COLOR:#A50044
 DESCRIPTION:⚽ Resultado: Sevilla4 - 1Barcelona\n🏆 Competición: LALIG
  A EA Sports 2025/2026\n📍 Estadio del rival
@@ -182,8 +182,8 @@ BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Girona
 DTSTART;TZID=Europe/Madrid:20261018T161500
 DTEND;TZID=Europe/Madrid:20261018T183000
-DTSTAMP:20260218T064510Z
-UID:barca_202610181615_947@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202610181615_7938@github.com
 COLOR:#004D98
 DESCRIPTION:⚽ Resultado: Barcelona2 - 1Girona\n🏆 Competición: LALIGA
   EA Sports 2025/2026\n📍 Spotify Camp Nou
@@ -199,8 +199,8 @@ BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Olympiacos
 DTSTART;TZID=Europe/Madrid:20261021T184500
 DTEND;TZID=Europe/Madrid:20261021T210000
-DTSTAMP:20260218T064510Z
-UID:barca_202610211845_28@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202610211845_4892@github.com
 COLOR:#004D98
 DESCRIPTION:⚽ Resultado: Barcelona6 - 1Olympiacos\n🏆 Competición: Ch
  ampions League 2025/2026\n📍 Spotify Camp Nou
@@ -216,8 +216,8 @@ BEGIN:VEVENT
 SUMMARY:✈️ Barcelona vs Real Madrid
 DTSTART;TZID=Europe/Madrid:20261026T161500
 DTEND;TZID=Europe/Madrid:20261026T183000
-DTSTAMP:20260218T064510Z
-UID:barca_202610261615_9612@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202610261615_2217@github.com
 COLOR:#A50044
 DESCRIPTION:⚽ Resultado: Real Madrid2 - 1Barcelona\n🏆 Competición: L
  ALIGA EA Sports 2025/2026\n📍 Estadio del rival
@@ -233,8 +233,8 @@ BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Elche
 DTSTART;TZID=Europe/Madrid:20261102T183000
 DTEND;TZID=Europe/Madrid:20261102T204500
-DTSTAMP:20260218T064510Z
-UID:barca_202611021830_1365@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202611021830_4775@github.com
 COLOR:#004D98
 DESCRIPTION:⚽ Resultado: Barcelona3 - 1Elche\n🏆 Competición: LALIGA 
  EA Sports 2025/2026\n📍 Spotify Camp Nou
@@ -250,8 +250,8 @@ BEGIN:VEVENT
 SUMMARY:✈️ Barcelona vs Brujas
 DTSTART;TZID=Europe/Madrid:20261105T210000
 DTEND;TZID=Europe/Madrid:20261105T231500
-DTSTAMP:20260218T064510Z
-UID:barca_202611052100_4183@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202611052100_1140@github.com
 COLOR:#A50044
 DESCRIPTION:⚽ Resultado: Brujas3 - 3Barcelona\n🏆 Competición: Champi
  ons League 2025/2026\n📍 Estadio del rival
@@ -267,8 +267,8 @@ BEGIN:VEVENT
 SUMMARY:✈️ Barcelona vs Celta
 DTSTART;TZID=Europe/Madrid:20261109T210000
 DTEND;TZID=Europe/Madrid:20261109T231500
-DTSTAMP:20260218T064510Z
-UID:barca_202611092100_8653@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202611092100_8347@github.com
 COLOR:#A50044
 DESCRIPTION:⚽ Resultado: Celta2 - 4Barcelona\n🏆 Competición: LALIGA 
  EA Sports 2025/2026\n📍 Estadio del rival
@@ -284,8 +284,8 @@ BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Athletic
 DTSTART;TZID=Europe/Madrid:20261122T161500
 DTEND;TZID=Europe/Madrid:20261122T183000
-DTSTAMP:20260218T064510Z
-UID:barca_202611221615_7992@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202611221615_6858@github.com
 COLOR:#004D98
 DESCRIPTION:⚽ Resultado: Barcelona4 - 0Athletic\n🏆 Competición: LALI
  GA EA Sports 2025/2026\n📍 Spotify Camp Nou
@@ -301,8 +301,8 @@ BEGIN:VEVENT
 SUMMARY:✈️ Barcelona vs Chelsea
 DTSTART;TZID=Europe/Madrid:20261125T210000
 DTEND;TZID=Europe/Madrid:20261125T231500
-DTSTAMP:20260218T064510Z
-UID:barca_202611252100_6664@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202611252100_5288@github.com
 COLOR:#A50044
 DESCRIPTION:⚽ Resultado: Chelsea3 - 0Barcelona\n🏆 Competición: Champ
  ions League 2025/2026\n📍 Estadio del rival
@@ -318,8 +318,8 @@ BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Alavés
 DTSTART;TZID=Europe/Madrid:20261129T161500
 DTEND;TZID=Europe/Madrid:20261129T183000
-DTSTAMP:20260218T064510Z
-UID:barca_202611291615_1080@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202611291615_1693@github.com
 COLOR:#004D98
 DESCRIPTION:⚽ Resultado: Barcelona3 - 1Alavés\n🏆 Competición: LALIG
  A EA Sports 2025/2026\n📍 Spotify Camp Nou
@@ -335,8 +335,8 @@ BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Atlético
 DTSTART;TZID=Europe/Madrid:20261202T210000
 DTEND;TZID=Europe/Madrid:20261202T231500
-DTSTAMP:20260218T064510Z
-UID:barca_202612022100_8389@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202612022100_991@github.com
 COLOR:#004D98
 DESCRIPTION:⚽ Resultado: Barcelona3 - 1Atlético\n🏆 Competición: LAL
  IGA EA Sports 2025/2026\n📍 Spotify Camp Nou
@@ -352,8 +352,8 @@ BEGIN:VEVENT
 SUMMARY:✈️ Barcelona vs Betis
 DTSTART;TZID=Europe/Madrid:20261206T183000
 DTEND;TZID=Europe/Madrid:20261206T204500
-DTSTAMP:20260218T064510Z
-UID:barca_202612061830_3331@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202612061830_3159@github.com
 COLOR:#A50044
 DESCRIPTION:⚽ Resultado: Betis3 - 5Barcelona\n🏆 Competición: LALIGA 
  EA Sports 2025/2026\n📍 Estadio del rival
@@ -369,8 +369,8 @@ BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Eintracht Fr.
 DTSTART;TZID=Europe/Madrid:20261209T210000
 DTEND;TZID=Europe/Madrid:20261209T231500
-DTSTAMP:20260218T064510Z
-UID:barca_202612092100_8903@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202612092100_398@github.com
 COLOR:#004D98
 DESCRIPTION:⚽ Resultado: Barcelona2 - 1Eintracht Fr.\n🏆 Competición:
   Champions League 2025/2026\n📍 Spotify Camp Nou
@@ -386,8 +386,8 @@ BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Osasuna
 DTSTART;TZID=Europe/Madrid:20261213T183000
 DTEND;TZID=Europe/Madrid:20261213T204500
-DTSTAMP:20260218T064510Z
-UID:barca_202612131830_4546@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202612131830_5948@github.com
 COLOR:#004D98
 DESCRIPTION:⚽ Resultado: Barcelona2 - 0Osasuna\n🏆 Competición: LALIG
  A EA Sports 2025/2026\n📍 Spotify Camp Nou
@@ -403,8 +403,8 @@ BEGIN:VEVENT
 SUMMARY:✈️ Barcelona vs Villarreal
 DTSTART;TZID=Europe/Madrid:20261221T161500
 DTEND;TZID=Europe/Madrid:20261221T183000
-DTSTAMP:20260218T064510Z
-UID:barca_202612211615_2715@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202612211615_5623@github.com
 COLOR:#A50044
 DESCRIPTION:⚽ Resultado: Villarreal0 - 2Barcelona\n🏆 Competición: LA
  LIGA EA Sports 2025/2026\n📍 Estadio del rival
@@ -420,8 +420,8 @@ BEGIN:VEVENT
 SUMMARY:✈️ Barcelona vs Espanyol
 DTSTART;TZID=Europe/Madrid:20260103T210000
 DTEND;TZID=Europe/Madrid:20260103T231500
-DTSTAMP:20260218T064510Z
-UID:barca_202601032100_1210@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202601032100_5877@github.com
 COLOR:#A50044
 DESCRIPTION:⚽ Resultado: Espanyol0 - 2Barcelona\n🏆 Competición: LALI
  GA EA Sports 2025/2026\n📍 Estadio del rival
@@ -437,8 +437,8 @@ BEGIN:VEVENT
 SUMMARY:✈️ Barcelona vs R. Sociedad
 DTSTART;TZID=Europe/Madrid:20260118T210000
 DTEND;TZID=Europe/Madrid:20260118T231500
-DTSTAMP:20260218T064510Z
-UID:barca_202601182100_3618@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202601182100_6018@github.com
 COLOR:#A50044
 DESCRIPTION:⚽ Resultado: R. Sociedad2 - 1Barcelona\n🏆 Competición: L
  ALIGA EA Sports 2025/2026\n📍 Estadio del rival
@@ -454,8 +454,8 @@ BEGIN:VEVENT
 SUMMARY:✈️ Barcelona vs Slavia P.
 DTSTART;TZID=Europe/Madrid:20260121T210000
 DTEND;TZID=Europe/Madrid:20260121T231500
-DTSTAMP:20260218T064510Z
-UID:barca_202601212100_2027@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202601212100_1250@github.com
 COLOR:#A50044
 DESCRIPTION:⚽ Resultado: Slavia P.2 - 4Barcelona\n🏆 Competición: Cha
  mpions League 2025/2026\n📍 Estadio del rival
@@ -471,8 +471,8 @@ BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Oviedo
 DTSTART;TZID=Europe/Madrid:20260125T161500
 DTEND;TZID=Europe/Madrid:20260125T183000
-DTSTAMP:20260218T064510Z
-UID:barca_202601251615_9991@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202601251615_6095@github.com
 COLOR:#004D98
 DESCRIPTION:⚽ Resultado: Barcelona3 - 0Oviedo\n🏆 Competición: LALIGA
   EA Sports 2025/2026\n📍 Spotify Camp Nou
@@ -488,8 +488,8 @@ BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Copenhague
 DTSTART;TZID=Europe/Madrid:20260128T210000
 DTEND;TZID=Europe/Madrid:20260128T231500
-DTSTAMP:20260218T064510Z
-UID:barca_202601282100_1669@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202601282100_9806@github.com
 COLOR:#004D98
 DESCRIPTION:⚽ Resultado: Barcelona4 - 1Copenhague\n🏆 Competición: Ch
  ampions League 2025/2026\n📍 Spotify Camp Nou
@@ -505,8 +505,8 @@ BEGIN:VEVENT
 SUMMARY:✈️ Barcelona vs Elche
 DTSTART;TZID=Europe/Madrid:20260131T210000
 DTEND;TZID=Europe/Madrid:20260131T231500
-DTSTAMP:20260218T064510Z
-UID:barca_202601312100_1365@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202601312100_4775@github.com
 COLOR:#A50044
 DESCRIPTION:⚽ Resultado: Elche1 - 3Barcelona\n🏆 Competición: LALIGA 
  EA Sports 2025/2026\n📍 Estadio del rival
@@ -522,8 +522,8 @@ BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Mallorca
 DTSTART;TZID=Europe/Madrid:20260207T161500
 DTEND;TZID=Europe/Madrid:20260207T183000
-DTSTAMP:20260218T064510Z
-UID:barca_202602071615_996@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202602071615_5412@github.com
 COLOR:#004D98
 DESCRIPTION:⚽ Resultado: Barcelona3 - 0Mallorca\n🏆 Competición: LALI
  GA EA Sports 2025/2026\n📍 Spotify Camp Nou
@@ -539,8 +539,8 @@ BEGIN:VEVENT
 SUMMARY:✈️ Barcelona vs Girona
 DTSTART;TZID=Europe/Madrid:20260216T210000
 DTEND;TZID=Europe/Madrid:20260216T231500
-DTSTAMP:20260218T064510Z
-UID:barca_202602162100_947@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202602162100_7938@github.com
 COLOR:#A50044
 DESCRIPTION:⚽ Resultado: Girona2 - 1Barcelona\n🏆 Competición: LALIGA
   EA Sports 2025/2026\n📍 Estadio del rival
@@ -556,8 +556,8 @@ BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Levante
 DTSTART;TZID=Europe/Madrid:20260222T161500
 DTEND;TZID=Europe/Madrid:20260222T181500
-DTSTAMP:20260218T064510Z
-UID:barca_202602221615_6390@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202602221615_2342@github.com
 COLOR:#004D98
 DESCRIPTION:⚽ FC Barcelona vs Levante\n🏆 Competición: LALIGA EA Spor
  ts 2025/2026\n📍 Spotify Camp Nou
@@ -573,8 +573,8 @@ BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Villarreal
 DTSTART;TZID=Europe/Madrid:20260228T161500
 DTEND;TZID=Europe/Madrid:20260228T181500
-DTSTAMP:20260218T064510Z
-UID:barca_202602281615_2715@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202602281615_5623@github.com
 COLOR:#004D98
 DESCRIPTION:⚽ FC Barcelona vs Villarreal\n🏆 Competición: LALIGA EA S
  ports 2025/2026\n📍 Spotify Camp Nou
@@ -590,8 +590,8 @@ BEGIN:VEVENT
 SUMMARY:✈️ Barcelona vs Athletic
 DTSTART;TZID=Europe/Madrid:20260308T161500
 DTEND;TZID=Europe/Madrid:20260308T181500
-DTSTAMP:20260218T064510Z
-UID:barca_202603081615_7992@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202603081615_6858@github.com
 COLOR:#A50044
 DESCRIPTION:⚽ FC Barcelona vs Athletic\n🏆 Competición: LALIGA EA Spo
  rts 2025/2026\n📍 Estadio del rival
@@ -607,8 +607,8 @@ BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Sevilla
 DTSTART;TZID=Europe/Madrid:20260315T170000
 DTEND;TZID=Europe/Madrid:20260315T190000
-DTSTAMP:20260218T064510Z
-UID:barca_202603151700_7102@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202603151700_532@github.com
 COLOR:#004D98
 DESCRIPTION:⚽ FC Barcelona vs Sevilla\n🏆 Competición: LALIGA EA Spor
  ts 2025/2026\n📍 Spotify Camp Nou
@@ -624,8 +624,8 @@ BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Rayo
 DTSTART;TZID=Europe/Madrid:20260322T170000
 DTEND;TZID=Europe/Madrid:20260322T190000
-DTSTAMP:20260218T064510Z
-UID:barca_202603221700_9828@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202603221700_9234@github.com
 COLOR:#004D98
 DESCRIPTION:⚽ FC Barcelona vs Rayo\n🏆 Competición: LALIGA EA Sports 
  2025/2026\n📍 Spotify Camp Nou
@@ -641,8 +641,8 @@ BEGIN:VEVENT
 SUMMARY:✈️ Barcelona vs Atlético
 DTSTART;TZID=Europe/Madrid:20260405T170000
 DTEND;TZID=Europe/Madrid:20260405T190000
-DTSTAMP:20260218T064510Z
-UID:barca_202604051700_8389@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202604051700_991@github.com
 COLOR:#A50044
 DESCRIPTION:⚽ FC Barcelona vs Atlético\n🏆 Competición: LALIGA EA Sp
  orts 2025/2026\n📍 Estadio del rival
@@ -658,8 +658,8 @@ BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Espanyol
 DTSTART;TZID=Europe/Madrid:20260412T170000
 DTEND;TZID=Europe/Madrid:20260412T190000
-DTSTAMP:20260218T064510Z
-UID:barca_202604121700_1210@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202604121700_5877@github.com
 COLOR:#004D98
 DESCRIPTION:⚽ FC Barcelona vs Espanyol\n🏆 Competición: LALIGA EA Spo
  rts 2025/2026\n📍 Spotify Camp Nou
@@ -675,8 +675,8 @@ BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Celta
 DTSTART;TZID=Europe/Madrid:20260422T210000
 DTEND;TZID=Europe/Madrid:20260422T230000
-DTSTAMP:20260218T064510Z
-UID:barca_202604222100_8653@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202604222100_8347@github.com
 COLOR:#004D98
 DESCRIPTION:⚽ FC Barcelona vs Celta\n🏆 Competición: LALIGA EA Sports
   2025/2026\n📍 Spotify Camp Nou
@@ -692,8 +692,8 @@ BEGIN:VEVENT
 SUMMARY:✈️ Barcelona vs Getafe
 DTSTART;TZID=Europe/Madrid:20260426T170000
 DTEND;TZID=Europe/Madrid:20260426T190000
-DTSTAMP:20260218T064510Z
-UID:barca_202604261700_7@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202604261700_3581@github.com
 COLOR:#A50044
 DESCRIPTION:⚽ FC Barcelona vs Getafe\n🏆 Competición: LALIGA EA Sport
  s 2025/2026\n📍 Estadio del rival
@@ -709,8 +709,8 @@ BEGIN:VEVENT
 SUMMARY:✈️ Barcelona vs Osasuna
 DTSTART;TZID=Europe/Madrid:20260503T170000
 DTEND;TZID=Europe/Madrid:20260503T190000
-DTSTAMP:20260218T064510Z
-UID:barca_202605031700_4546@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202605031700_5948@github.com
 COLOR:#A50044
 DESCRIPTION:⚽ FC Barcelona vs Osasuna\n🏆 Competición: LALIGA EA Spor
  ts 2025/2026\n📍 Estadio del rival
@@ -726,8 +726,8 @@ BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Real Madrid
 DTSTART;TZID=Europe/Madrid:20260510T170000
 DTEND;TZID=Europe/Madrid:20260510T190000
-DTSTAMP:20260218T064510Z
-UID:barca_202605101700_9612@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202605101700_2217@github.com
 COLOR:#004D98
 DESCRIPTION:⚽ FC Barcelona vs Real Madrid\n🏆 Competición: LALIGA EA 
  Sports 2025/2026\n📍 Spotify Camp Nou
@@ -743,8 +743,8 @@ BEGIN:VEVENT
 SUMMARY:✈️ Barcelona vs Alavés
 DTSTART;TZID=Europe/Madrid:20260513T210000
 DTEND;TZID=Europe/Madrid:20260513T230000
-DTSTAMP:20260218T064510Z
-UID:barca_202605132100_1080@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202605132100_1693@github.com
 COLOR:#A50044
 DESCRIPTION:⚽ FC Barcelona vs Alavés\n🏆 Competición: LALIGA EA Spor
  ts 2025/2026\n📍 Estadio del rival
@@ -760,8 +760,8 @@ BEGIN:VEVENT
 SUMMARY:🏠 Barcelona vs Betis
 DTSTART;TZID=Europe/Madrid:20260517T170000
 DTEND;TZID=Europe/Madrid:20260517T190000
-DTSTAMP:20260218T064510Z
-UID:barca_202605171700_3331@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202605171700_3159@github.com
 COLOR:#004D98
 DESCRIPTION:⚽ FC Barcelona vs Betis\n🏆 Competición: LALIGA EA Sports
   2025/2026\n📍 Spotify Camp Nou
@@ -777,8 +777,8 @@ BEGIN:VEVENT
 SUMMARY:✈️ Barcelona vs Valencia
 DTSTART;TZID=Europe/Madrid:20260524T170000
 DTEND;TZID=Europe/Madrid:20260524T190000
-DTSTAMP:20260218T064510Z
-UID:barca_202605241700_4057@github.com
+DTSTAMP:20260219T064333Z
+UID:barca_202605241700_7685@github.com
 COLOR:#A50044
 DESCRIPTION:⚽ FC Barcelona vs Valencia\n🏆 Competición: LALIGA EA Spo
  rts 2025/2026\n📍 Estadio del rival
